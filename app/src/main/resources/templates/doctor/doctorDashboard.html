@@ -99,3 +99,87 @@ This file defines the Doctor Dashboard interface, allowing doctors to view and m
 
     * Properly close the `<body>` and `<html>` tags to complete the document.
  -->
+
+
+ <!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <title>Doctor Dashboard</title>
+  <link rel="icon" href="/assets/images/logo/logo.png" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" th:href="@{/assets/css/adminDashboard.css}" />
+  <link rel="stylesheet" th:href="@{/assets/css/doctorDashboard.css}" />
+  <link rel="stylesheet" th:href="@{/assets/css/style.css}" />
+
+  <!-- Utility Scripts -->
+  <script th:src="@{/js/util.js}" defer></script>
+  <script th:src="@{/js/render.js}" defer></script>
+
+  <!-- Components -->
+  <script th:src="@{/js/components/header.js}" defer></script>
+  <script th:src="@{/js/components/footer.js}" defer></script>
+  <script th:src="@{/js/components/patientRows.js}" defer></script>
+
+  <!-- Services and Page Logic -->
+  <script type="module" th:src="@{/js/services/patientServices.js}" defer></script>
+  <script type="module" th:src="@{/js/doctorDashboard.js}" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+
+      <!-- Header Section -->
+      <div id="header"></div>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <h2>Welcome, Doctor</h2>
+
+        <!-- Search and Filter -->
+        <div class="filters">
+          <input
+            type="text"
+            id="searchBar"
+            placeholder="Search by patient name"
+            class="input-field"
+          />
+
+          <button id="todayAppointmentsBtn" class="dashboard-btn">
+            Today's Appointments
+          </button>
+
+          <input
+            type="date"
+            id="dateFilter"
+            class="input-field"
+          />
+        </div>
+
+        <!-- Patient Records Table -->
+        <section class="patient-section">
+          <table id="patientTable">
+            <thead>
+              <tr>
+                <th>Patient ID</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Prescription</th>
+              </tr>
+            </thead>
+            <tbody id="patientTableBody">
+              <!-- patientRows.js will populate rows here -->
+            </tbody>
+          </table>
+        </section>
+      </main>
+
+      <!-- Footer Section -->
+      <div id="footer"></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -107,3 +107,61 @@ with search, filter, and modal functionality.
 
  -->
 
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard - Smart Clinic</title>
+  <link rel="stylesheet" href="/assets/css/adminDashboard.css">
+  <script src="/js/components/header.js" defer></script>
+  <script src="/js/components/footer.js" defer></script>
+  <script type="module" src="/js/adminDashboard.js" defer></script>
+</head>
+<body>
+  <div id="header"></div>
+
+  <main class="admin-dashboard">
+    <h2>Manage Doctors</h2>
+
+    <!-- Filters and Search -->
+    <div class="filters">
+      <input type="text" id="searchDoctor" placeholder="Search doctor by name" class="input-field">
+      <select id="specialtyFilter" class="select-dropdown">
+        <option value="">All Specialties</option>
+        <option value="Cardiology">Cardiology</option>
+        <option value="Neurology">Neurology</option>
+        <!-- Add more -->
+      </select>
+      <select id="timeFilter" class="select-dropdown">
+        <option value="">All Times</option>
+        <option value="Morning">Morning</option>
+        <option value="Evening">Evening</option>
+      </select>
+      <button class="dashboard-btn" onclick="openAddDoctorModal()">Add Doctor</button>
+    </div>
+
+    <!-- Doctor Cards Container -->
+    <div id="doctorList" class="doctor-list">
+      <!-- doctorCard.js will render cards here -->
+    </div>
+  </main>
+
+  <!-- Add Doctor Modal -->
+  <div id="addDoctorModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" onclick="closeAddDoctorModal()">&times;</span>
+      <h3>Add New Doctor</h3>
+      <form id="addDoctorForm">
+        <input type="text" placeholder="Doctor Name" name="name" required class="input-field">
+        <input type="text" placeholder="Specialty" name="specialty" required class="input-field">
+        <input type="text" placeholder="Available Time" name="time" required class="input-field">
+        <button type="submit" class="dashboard-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+</body>
+</html>
+
+

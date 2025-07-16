@@ -122,4 +122,96 @@
 
   16. **Render the Header**: Finally, the `renderHeader()` function is called to initialize the header rendering process when the page loads.
 */
-   
+
+function renderHeader() {
+  const headerDiv = document.getElementById("header");
+  if (!headerDiv) return;
+
+  // Clear storage if on the homepage (index.html)
+  if (window.location.pathname.endsWith("/")) {
+    localStorage.removeItem("userRole");
+    localStorage.removeItem("token");
+  }
+
+  const role = localStorage.getItem("userRole");
+  const token = localStorage.getItem("token");
+
+  // If role requires token but token is missing
+  if ((role === "loggedPatient" || role === "admin" || role === "doctor") && !token) {
+    localStorage.removeItem("userRole");
+    alert("Session expired or invalid login. Please log in again.");
+    window.location.href = "/";
+    return;
+  }
+
+  let headerContent = `
+    <div class="header-container">
+      <img src="../assets/images/logo/logo.png" alt="Logo" class="logo" />
+      <nav class="nav-items">
+  `;
+
+  // Role-based header buttons
+  if (role === "admin") {
+    headerContent += `
+      <button id="addDocBtn" class="adminBtn">Add Doctor</button>
+      <a href="#" id="logoutBtn">Logout</a>
+    `;
+  } else if (role === "doctor") {
+    headerContent += `
+      <a href="/templates/doctor/doctorDashboard.html">Home</a>
+      <a href="#" id="logoutBtn">Logout</a>
+    `;
+  } else if (role === "patient") {
+    headerContent += `
+      <a href="/pages/patientDashboard.html">Login</a>
+      <a href="/pages/patientDashboard.html">Sign Up</a>
+    `;
+  } else if (role === "loggedPatient") {
+    headerContent += `
+      <a href="/pages/loggedPatientDashboard.html">Home</a>
+      <a href="/pages/patientAppointments.html">Appointments</a>
+      <a href="#" id="logoutPatientBtn">Logout</a>
+    `;
+  }
+
+  headerContent += `</nav></div>`;
+  headerDiv.innerHTML = headerContent;
+
+  // Attach event listeners
+  attachHeaderButtonListeners();
+}
+
+function attachHeaderButtonListeners() {
+  const addDocBtn = document.getElementById("addDocBtn");
+  if (addDocBtn) {
+    addDocBtn.addEventListener("click", () => {
+      openModal("addDoctor");
+    });
+  }
+
+  const logoutBtn = document.getElementById("logoutBtn");
+  if (logoutBtn) {
+    logoutBtn.addEventListener("click", logout);
+  }
+
+  const logoutPatientBtn = document.getElementById("logoutPatientBtn");
+  if (logoutPatientBtn) {
+    logoutPatientBtn.addEventListener("click", logoutPatient);
+  }
+}
+
+function logout() {
+  localStorage.removeItem("token");
+  localStorage.removeItem("userRole");
+  window.location.href = "/";
+}
+
+function logoutPatient() {
+  localStorage.removeItem("token");
+  localStorage.setItem("userRole", "patient");
+  window.location.href = "/pages/patientDashboard.html";
+}
+
+// Auto-call header rendering on script load
+document.addEventListener("DOMContentLoaded", renderHeader);
+

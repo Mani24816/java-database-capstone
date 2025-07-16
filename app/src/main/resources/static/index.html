@@ -102,3 +102,63 @@ and triggers modal-based login functionality.
     * Properly close all opened tags to complete the document structure.
 
  -->
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart Clinic - Select Role</title>
+  <link rel="icon" href="./assets/images/logo/logo.png" />
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="./assets/css/index.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- Utility Scripts -->
+  <script src="./js/util.js" defer></script>
+  <script src="./js/render.js" defer></script>
+
+  <!-- Component Scripts -->
+  <script src="./js/components/header.js" defer></script>
+  <script src="./js/components/footer.js" defer></script>
+</head>
+<body>
+
+  <div class="container">
+    <div class="wrapper">
+
+      <!-- Header placeholder -->
+      <div id="header"></div>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <h2>Select Your Role</h2>
+
+        <!-- Role Buttons -->
+        <div class="role-buttons">
+          <button id="adminBtn" onclick="selectRole('admin')">Admin</button>
+          <button id="doctorBtn" onclick="selectRole('doctor')">Doctor</button>
+          <button id="patientBtn" onclick="selectRole('patient')">Patient</button>
+        </div>
+      </main>
+
+      <!-- Footer placeholder -->
+      <div id="footer"></div>
+    </div>
+  </div>
+
+  <!-- Hidden Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <div id="modal-body">
+        <!-- Dynamic login form or content will be injected here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Service script for role selection and modal behavior -->
+  <script type="module" src="./js/services/index.js" defer></script>
+</body>
+</html>
