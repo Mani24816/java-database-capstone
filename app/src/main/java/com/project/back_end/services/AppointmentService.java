@@ -1,24 +1,38 @@
-package com.project.back_end.services;
+package com.project.back_end.service;
+
+import com.project.back_end.model.Appointment;
+import com.project.back_end.model.Doctor;
+import com.project.back_end.model.Patient;
+import com.project.back_end.repo.AppointmentRepository;
+import com.project.back_end.repo.DoctorRepository;
+import com.project.back_end.repo.PatientRepository;
+import com.project.back_end.security.TokenService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Service;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.util.*;
 
 @Service
 public class AppointmentService {
- private final AppointmentRepository appointmentRepository;
-    private final DoctorRepository doctorRepository;
-    private final PatientRepository patientRepository;
-    private final TokenService tokenService;
 
-    public AppointmentService(AppointmentRepository appointmentRepository,
-                              DoctorRepository doctorRepository,
-                              PatientRepository patientRepository,
-                              TokenService tokenService) {
-        this.appointmentRepository = appointmentRepository;
-        this.doctorRepository = doctorRepository;
-        this.patientRepository = patientRepository;
-        this.tokenService = tokenService;
-    }
+    @Autowired
+    private AppointmentRepository appointmentRepository;
 
-    // 1. Book Appointment
-    @Transactional
+    @Autowired
+    private PatientRepository patientRepository;
+
+    @Autowired
+    private DoctorRepository doctorRepository;
+
+    @Autowired
+    private TokenService tokenService;
+
+    /** Book a new appointment */
     public int bookAppointment(Appointment appointment) {
         try {
             appointmentRepository.save(appointment);
@@ -29,91 +43,67 @@ public class AppointmentService {
         }
     }
 
-    // 2. Update Appointment
-    @Transactional
+    /** Update an existing appointment */
     public ResponseEntity<Map<String, String>> updateAppointment(Appointment appointment) {
         Map<String, String> response = new HashMap<>();
-        Optional<Appointment> optionalAppointment = appointmentRepository.findById(appointment.getId());
 
-        if (optionalAppointment.isEmpty()) {
+        Optional<Appointment> existing = appointmentRepository.findById(appointment.getId());
+        if (existing.isEmpty()) {
             response.put("message", "Appointment not found");
-            return ResponseEntity.badRequest().body(response);
+            return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
         }
 
-        Appointment existingAppointment = optionalAppointment.get();
-
-        if (!Objects.equals(existingAppointment.getPatient().getId(), appointment.getPatient().getId())) {
-            response.put("message", "Unauthorized update attempt");
-            return ResponseEntity.status(403).body(response);
-        }
-
-        Optional<Doctor> doctorOptional = doctorRepository.findById(appointment.getDoctor().getId());
-        if (doctorOptional.isEmpty()) {
-            response.put("message", "Invalid doctor ID");
-            return ResponseEntity.badRequest().body(response);
-        }
-
-        existingAppointment.setAppointmentTime(appointment.getAppointmentTime());
-        existingAppointment.setDoctor(doctorOptional.get());
-
-        appointmentRepository.save(existingAppointment);
+        // Add any additional validation here if needed
+        appointmentRepository.save(appointment);
         response.put("message", "Appointment updated successfully");
-        return ResponseEntity.ok(response);
+        return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
-    // 3. Cancel Appointment
-    @Transactional
-    public ResponseEntity<Map<String, String>> cancelAppointment(Long id, String token) {
+    /** Cancel an appointment */
+    public ResponseEntity<Map<String, String>> cancelAppointment(long id, String token) {
         Map<String, String> response = new HashMap<>();
+        String email = tokenService.extractUsername(token);
         Optional<Appointment> optionalAppointment = appointmentRepository.findById(id);
 
         if (optionalAppointment.isEmpty()) {
             response.put("message", "Appointment not found");
-            return ResponseEntity.badRequest().body(response);
+            return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
         }
 
         Appointment appointment = optionalAppointment.get();
-        Long patientIdFromToken = tokenService.extractUserId(token);
-
-        if (!Objects.equals(appointment.getPatient().getId(), patientIdFromToken)) {
+        if (!appointment.getPatientEmail().equals(email)) {
             response.put("message", "Unauthorized cancellation attempt");
-            return ResponseEntity.status(403).body(response);
+            return new ResponseEntity<>(response, HttpStatus.UNAUTHORIZED);
         }
 
         appointmentRepository.delete(appointment);
-        response.put("message", "Appointment canceled successfully");
-        return ResponseEntity.ok(response);
+        response.put("message", "Appointment cancelled successfully");
+        return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
-    // 4. Get Appointments for Doctor on Specific Date
-    @Transactional
+    /** Get appointments for a doctor on a given date, optionally filter by patient name */
     public Map<String, Object> getAppointment(String pname, LocalDate date, String token) {
         Map<String, Object> result = new HashMap<>();
-        Long doctorId = tokenService.extractUserId(token);  // assuming token contains doctor ID
+        String email = tokenService.extractUsername(token);
+        Optional<Doctor> doctorOpt = doctorRepository.findByEmail(email);
 
-        LocalDateTime startOfDay = date.atStartOfDay();
-        LocalDateTime endOfDay = date.atTime(LocalTime.MAX);
+        if (doctorOpt.isEmpty()) {
+            result.put("error", "Doctor not found");
+            return result;
+        }
+
+        Doctor doctor = doctorOpt.get();
+        LocalDateTime start = date.atStartOfDay();
+        LocalDateTime end = date.atTime(LocalTime.MAX);
 
         List<Appointment> appointments = appointmentRepository
-                .findByDoctorIdAndAppointmentTimeBetween(doctorId, startOfDay, endOfDay);
+                .findByDoctorIdAndAppointmentTimeBetween(doctor.getId(), start, end);
 
         if (pname != null && !pname.isEmpty()) {
-            appointments = appointments.stream()
-                    .filter(a -> a.getPatient().getName().toLowerCase().contains(pname.toLowerCase()))
-                    .toList();
+            appointments.removeIf(app -> !app.getPatientName().toLowerCase().contains(pname.toLowerCase()));
         }
 
         result.put("appointments", appointments);
         return result;
-    }
-
-    // 5. Change Status
-    @Transactional
-    public void changeStatus(Long appointmentId, String status) {
-        Optional<Appointment> optionalAppointment = appointmentRepository.findById(appointmentId);
-        optionalAppointment.ifPresent(appointment -> {
-            appointment.setStatus(status);
-            appointmentRepository.save(appointment);
-        });
     }
 }

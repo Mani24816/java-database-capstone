@@ -1,24 +1,27 @@
+package com.project.back_end.controller;
 
-package com.project.back_end.controllers;
+import com.project.back_end.model.Admin;
+import com.project.back_end.service.Service;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
-@RestController  // 1. Marks this class as a REST controller to handle HTTP requests and return JSON
-@RequestMapping("${api.path}admin")  
+import java.util.Map;
 
+@RestController
+@RequestMapping("${api.path}" + "admin")  // Example: if api.path=/api/, then path = /api/admin
 public class AdminController {
 
-private final AdminService adminService;
-
-    // 2. Constructor injection of AdminService for clean separation of concerns
     @Autowired
-    public AdminController(AdminService adminService) {
-        this.adminService = adminService;
-    }
+    private Service service;
 
-    // 3. Endpoint for admin login
+    /**
+     * Handles admin login by validating credentials.
+     * @param admin Admin object containing username and password
+     * @return ResponseEntity with JWT token or error message
+     */
     @PostMapping("/login")
     public ResponseEntity<Map<String, String>> adminLogin(@RequestBody Admin admin) {
-        // Delegates to the service layer for validation logic
-        return adminService.validateAdmin(admin);
+        return service.validateAdmin(admin);
     }
 }
-

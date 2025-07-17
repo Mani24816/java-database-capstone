@@ -1,57 +1,62 @@
-package com.project.back_end.controllers;
+package com.project.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import com.project.model.Prescription;
+import com.project.service.PrescriptionService;
+import com.project.service.Service;
+
+import java.util.List;
+import java.util.Map;
 
 @RestController
-@RequestMapping("${api.path}" + "prescription")
+@RequestMapping("${api.path}prescription")
 public class PrescriptionController {
-    
-@Autowired
-    private PrescriptionService prescriptionService;
 
     @Autowired
-    private AppointmentService appointmentService;
+    private PrescriptionService prescriptionService;
 
     @Autowired
     private Service service;
 
-    /**
-     * Save Prescription
-     * @param token authentication token for the doctor
-     * @param prescription prescription details from request body
-     * @return ResponseEntity with status and message
-     */
+    // 1. Save Prescription
     @PostMapping("/{token}")
-    public ResponseEntity<?> savePrescription(@PathVariable String token, @RequestBody Prescription prescription) {
-        if (!service.validateToken(token, "doctor")) {
-            return new ResponseEntity<>("Invalid Token", HttpStatus.UNAUTHORIZED);
+    public ResponseEntity<Map<String, String>> savePrescription(@PathVariable String token, @RequestBody Prescription prescription) {
+        // Validate the token
+        if (!service.validateToken(token)) {
+            return ResponseEntity
+                    .status(HttpStatus.UNAUTHORIZED)
+                    .body(Map.of("message", "Invalid token"));
         }
 
-        boolean result = prescriptionService.savePrescription(prescription);
-        if (result) {
-            // Update the appointment status after saving prescription
-            appointmentService.updateStatus(prescription.getAppointmentId(), "Prescription Issued");
-            return new ResponseEntity<>("Prescription saved successfully", HttpStatus.OK);
-        } else {
-            return new ResponseEntity<>("Failed to save prescription", HttpStatus.INTERNAL_SERVER_ERROR);
-        }
+        // Save the prescription
+        prescriptionService.savePrescription(prescription);
+        return ResponseEntity
+                .ok(Map.of("message", "Prescription saved successfully"));
     }
 
-    /**
-     * Get Prescription by Appointment ID
-     * @param appointmentId ID of the appointment
-     * @param token authentication token for the doctor
-     * @return ResponseEntity with prescription or error message
-     */
+    // 2. Get Prescription by Appointment ID
     @GetMapping("/{appointmentId}/{token}")
-    public ResponseEntity<?> getPrescription(@PathVariable int appointmentId, @PathVariable String token) {
-        if (!service.validateToken(token, "doctor")) {
-            return new ResponseEntity<>("Invalid Token", HttpStatus.UNAUTHORIZED);
+    public ResponseEntity<?> getPrescription(@PathVariable Long appointmentId, @PathVariable String token) {
+        // Validate the token
+        if (!service.validateToken(token)) {
+            return ResponseEntity
+                    .status(HttpStatus.UNAUTHORIZED)
+                    .body(Map.of("message", "Invalid token"));
         }
 
-        Prescription prescription = prescriptionService.getPrescription(appointmentId);
-        if (prescription != null) {
-            return new ResponseEntity<>(prescription, HttpStatus.OK);
-        } else {
-            return new ResponseEntity<>("No prescription found for the given appointment", HttpStatus.NOT_FOUND);
+        // Get prescriptions
+        List<Prescription> prescriptions = prescriptionService.getPrescription(appointmentId);
+
+        if (prescriptions.isEmpty()) {
+            return ResponseEntity
+                    .status(HttpStatus.NOT_FOUND)
+                    .body(Map.of("message", "No prescription found for this appointment"));
         }
+
+        return ResponseEntity.ok(prescriptions);
     }
 }

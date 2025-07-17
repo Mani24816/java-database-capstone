@@ -1,40 +1,33 @@
-package com.project.back_end.DTO;
+package com.project.DTO;
 
 public class Login {
-    
-// 1. 'email' field:
-    //    - Represents the email address used for logging into the system.
-    //    - Expected to contain a valid email address for authentication.
-    private String email;
 
-    // 2. 'password' field:
-    //    - Represents the password associated with the email.
-    //    - Used to verify the user's identity during login.
-    //    - Typically hashed and verified securely.
+    private String identifier;
     private String password;
 
-    // 3. Constructor:
-    //    - Uses the default constructor provided by Java.
-    //    - Can be initialized with setters or via reflection during deserialization.
-
-    // 4. Getters and Setters:
-
-    // Gets the email value
-    public String getEmail() {
-        return email;
+    public Login() {
+        // Default constructor needed for deserialization
     }
 
-    // Sets the email value
-    public void setEmail(String email) {
-        this.email = email;
+    public Login(String identifier, String password) {
+        this.identifier = identifier;
+        this.password = password;
     }
 
-    // Gets the password value
+    // Getter and Setter for identifier
+    public String getIdentifier() {
+        return identifier;
+    }
+
+    public void setIdentifier(String identifier) {
+        this.identifier = identifier;
+    }
+
+    // Getter and Setter for password
     public String getPassword() {
         return password;
     }
 
-    // Sets the password value
     public void setPassword(String password) {
         this.password = password;
     }
