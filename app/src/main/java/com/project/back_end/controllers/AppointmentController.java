@@ -1,6 +1,7 @@
 package com.project.back_end.controllers;
 
-
+@RestController
+@RequestMapping("/appointments")
 public class AppointmentController {
 
 // 1. Set Up the Controller Class:
