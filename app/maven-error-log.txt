@@ -1,0 +1,583 @@
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.project:back-end >------------------------
+[INFO] Building back-end 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ back-end ---
+[INFO] Deleting /home/project/java-database-capstone/app/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ back-end ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 44 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ back-end ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 27 source files with javac [debug parameters release 17] to target/classes
+[INFO] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java uses or overrides a deprecated API.
+[INFO] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java: Recompile with -Xlint:deprecation for details.
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AdminController.java:[4,37] cannot find symbol
+  symbol:   class AdminService
+  location: package com.project.back_end.services
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AdminController.java:[16,13] cannot find symbol
+  symbol:   class AdminService
+  location: class com.project.back_end.controllers.AdminController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java:[3,41] package com.project.back_end.repositories does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java:[4,41] package com.project.back_end.repositories does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java:[5,41] package com.project.back_end.repositories does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[16,19] cannot find symbol
+  symbol:   class AdminRepository
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[17,19] cannot find symbol
+  symbol:   class DoctorRepository
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[18,19] cannot find symbol
+  symbol:   class PatientRepository
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[3,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[4,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[5,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[6,41] package com.project.back_end.repositories does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[7,41] package com.project.back_end.repositories does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[5,41] package com.project.back_end.repositories does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[6,41] package com.project.back_end.repositories does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[8,32] package com.project.back_end.dto does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[24,20] cannot find symbol
+  symbol:   class AdminRepository
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[25,20] cannot find symbol
+  symbol:   class DoctorRepository
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[26,20] cannot find symbol
+  symbol:   class PatientRepository
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[50,62] cannot find symbol
+  symbol:   class Admin
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[73,36] cannot find symbol
+  symbol:   class Appointment
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[91,36] cannot find symbol
+  symbol:   class Patient
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[97,69] cannot find symbol
+  symbol:   class Login
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[23,13] cannot find symbol
+  symbol:   class PatientRepository
+  location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[26,13] cannot find symbol
+  symbol:   class AppointmentRepository
+  location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[19,13] cannot find symbol
+  symbol:   class DoctorRepository
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[22,13] cannot find symbol
+  symbol:   class AppointmentRepository
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[35,27] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[47,29] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[59,17] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[76,63] cannot find symbol
+  symbol:   class Login
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[135,50] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[135,18] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java:[23,19] cannot find symbol
+  symbol:   class AdminRepository
+  location: class com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java:[24,19] cannot find symbol
+  symbol:   class DoctorRepository
+  location: class com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java:[25,19] cannot find symbol
+  symbol:   class PatientRepository
+  location: class com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java:[32,25] cannot find symbol
+  symbol:   class AdminRepository
+  location: class com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java:[32,58] cannot find symbol
+  symbol:   class DoctorRepository
+  location: class com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java:[32,93] cannot find symbol
+  symbol:   class PatientRepository
+  location: class com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[8,1] com.project.back_end.services.Service is already defined in this compilation unit
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[3,1] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[4,1] package com.project.back_end.repositories does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PatientController.java:[3,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PatientController.java:[4,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PatientController.java:[37,57] cannot find symbol
+  symbol:   class Patient
+  location: class com.project.back_end.controllers.PatientController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PatientController.java:[52,67] cannot find symbol
+  symbol:   class Login
+  location: class com.project.back_end.controllers.PatientController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PrescriptionController.java:[3,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PrescriptionService.java:[3,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PrescriptionService.java:[4,41] package com.project.back_end.repositories does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PrescriptionController.java:[23,88] cannot find symbol
+  symbol:   class Prescription
+  location: class com.project.back_end.controllers.PrescriptionController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PrescriptionService.java:[17,13] cannot find symbol
+  symbol:   class PrescriptionRepository
+  location: class com.project.back_end.services.PrescriptionService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PrescriptionService.java:[20,65] cannot find symbol
+  symbol:   class Prescription
+  location: class com.project.back_end.services.PrescriptionService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[2,2] cannot find symbol
+  symbol: class Controller
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[30,13] cannot find symbol
+  symbol:   class TokenValidationService
+  location: class com.project.back_end.mvc.DashboardController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/repo/PrescriptionRepository.java:[3,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/repo/PrescriptionRepository.java:[10,65] cannot find symbol
+  symbol: class Prescription
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/repo/PrescriptionRepository.java:[13,10] cannot find symbol
+  symbol:   class Prescription
+  location: interface com.project.back_end.repo.PrescriptionRepository
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[29,2] cannot find symbol
+  symbol:   class Autowired
+  location: class com.project.back_end.mvc.DashboardController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[34,35] cannot find symbol
+  symbol:   class PathVariable
+  location: class com.project.back_end.mvc.DashboardController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[33,6] cannot find symbol
+  symbol:   class GetMapping
+  location: class com.project.back_end.mvc.DashboardController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[48,36] cannot find symbol
+  symbol:   class PathVariable
+  location: class com.project.back_end.mvc.DashboardController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[47,6] cannot find symbol
+  symbol:   class GetMapping
+  location: class com.project.back_end.mvc.DashboardController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[30,13] bad operand type org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.lang.String>> for unary operator '!'
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[36,60] method getAppointment in class com.project.back_end.services.AppointmentService cannot be applied to given types;
+  required: java.lang.String,java.time.LocalDate,java.lang.String
+  found:    java.lang.String,java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[46,13] bad operand type org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.lang.String>> for unary operator '!'
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[51,13] bad operand type int for unary operator '!'
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[56,60] incompatible types: int cannot be converted to boolean
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[72,13] bad operand type org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.lang.String>> for unary operator '!'
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[77,63] incompatible types: org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.lang.String>> cannot be converted to boolean
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[93,13] bad operand type org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.lang.String>> for unary operator '!'
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[98,47] method cancelAppointment in class com.project.back_end.services.AppointmentService cannot be applied to given types;
+  required: long,java.lang.String
+  found:    java.lang.Long
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/AppointmentService.java:[68,42] cannot find symbol
+  symbol:   method extractIdFromToken(java.lang.String)
+  location: variable tokenService of type com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/AppointmentService.java:[85,37] cannot find symbol
+  symbol:   method extractIdFromToken(java.lang.String)
+  location: variable tokenService of type com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[52,9] cannot find symbol
+  symbol:   class Admin
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[66,14] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[74,18] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[80,9] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[92,9] cannot find symbol
+  symbol:   class Patient
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[99,9] cannot find symbol
+  symbol:   class Patient
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[115,43] cannot find symbol
+  symbol:   method extractUsername(java.lang.String)
+  location: variable tokenService of type com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[116,9] cannot find symbol
+  symbol:   class Patient
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[123,14] cannot find symbol
+  symbol:   class Appointment
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java:[55,20] cannot find symbol
+  symbol:   method parserBuilder()
+  location: class io.jsonwebtoken.Jwts
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[30,14] cannot find symbol
+  symbol:   class Appointment
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[31,62] cannot find symbol
+  symbol:   variable Appointment
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[77,9] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[94,14] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[101,14] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[108,14] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[115,14] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[122,14] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[129,14] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[41,36] cannot find symbol
+  symbol:   method extractEmail(java.lang.String)
+  location: variable tokenService of type com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[47,14] cannot find symbol
+  symbol:   class AppointmentDTO
+  location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[47,61] cannot find symbol
+  symbol:   method getAppointments()
+  location: class com.project.back_end.models.Patient
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[48,22] cannot find symbol
+  symbol:   class AppointmentDTO
+  location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[60,63] cannot find symbol
+  symbol:   method getAppointments()
+  location: class com.project.back_end.models.Patient
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[61,14] cannot find symbol
+  symbol:   class AppointmentDTO
+  location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[70,22] cannot find symbol
+  symbol:   class AppointmentDTO
+  location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[82,14] cannot find symbol
+  symbol:   class AppointmentDTO
+  location: class com.project.back_end.services.PatientService
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.263 s
+[INFO] Finished at: 2025-07-18T10:21:02-04:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile (default-compile) on project back-end: Compilation failure: Compilation failure: 
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AdminController.java:[4,37] cannot find symbol
+[ERROR]   symbol:   class AdminService
+[ERROR]   location: package com.project.back_end.services
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AdminController.java:[16,13] cannot find symbol
+[ERROR]   symbol:   class AdminService
+[ERROR]   location: class com.project.back_end.controllers.AdminController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java:[3,41] package com.project.back_end.repositories does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java:[4,41] package com.project.back_end.repositories does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java:[5,41] package com.project.back_end.repositories does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[16,19] cannot find symbol
+[ERROR]   symbol:   class AdminRepository
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[17,19] cannot find symbol
+[ERROR]   symbol:   class DoctorRepository
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[18,19] cannot find symbol
+[ERROR]   symbol:   class PatientRepository
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[3,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[4,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[5,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[6,41] package com.project.back_end.repositories does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[7,41] package com.project.back_end.repositories does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[5,41] package com.project.back_end.repositories does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[6,41] package com.project.back_end.repositories does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[8,32] package com.project.back_end.dto does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[24,20] cannot find symbol
+[ERROR]   symbol:   class AdminRepository
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[25,20] cannot find symbol
+[ERROR]   symbol:   class DoctorRepository
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[26,20] cannot find symbol
+[ERROR]   symbol:   class PatientRepository
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[50,62] cannot find symbol
+[ERROR]   symbol:   class Admin
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[73,36] cannot find symbol
+[ERROR]   symbol:   class Appointment
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[91,36] cannot find symbol
+[ERROR]   symbol:   class Patient
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[97,69] cannot find symbol
+[ERROR]   symbol:   class Login
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[23,13] cannot find symbol
+[ERROR]   symbol:   class PatientRepository
+[ERROR]   location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[26,13] cannot find symbol
+[ERROR]   symbol:   class AppointmentRepository
+[ERROR]   location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[19,13] cannot find symbol
+[ERROR]   symbol:   class DoctorRepository
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[22,13] cannot find symbol
+[ERROR]   symbol:   class AppointmentRepository
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[35,27] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[47,29] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[59,17] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[76,63] cannot find symbol
+[ERROR]   symbol:   class Login
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[135,50] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[135,18] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java:[23,19] cannot find symbol
+[ERROR]   symbol:   class AdminRepository
+[ERROR]   location: class com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java:[24,19] cannot find symbol
+[ERROR]   symbol:   class DoctorRepository
+[ERROR]   location: class com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java:[25,19] cannot find symbol
+[ERROR]   symbol:   class PatientRepository
+[ERROR]   location: class com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java:[32,25] cannot find symbol
+[ERROR]   symbol:   class AdminRepository
+[ERROR]   location: class com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java:[32,58] cannot find symbol
+[ERROR]   symbol:   class DoctorRepository
+[ERROR]   location: class com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java:[32,93] cannot find symbol
+[ERROR]   symbol:   class PatientRepository
+[ERROR]   location: class com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[8,1] com.project.back_end.services.Service is already defined in this compilation unit
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[3,1] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[4,1] package com.project.back_end.repositories does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PatientController.java:[3,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PatientController.java:[4,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PatientController.java:[37,57] cannot find symbol
+[ERROR]   symbol:   class Patient
+[ERROR]   location: class com.project.back_end.controllers.PatientController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PatientController.java:[52,67] cannot find symbol
+[ERROR]   symbol:   class Login
+[ERROR]   location: class com.project.back_end.controllers.PatientController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PrescriptionController.java:[3,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PrescriptionService.java:[3,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PrescriptionService.java:[4,41] package com.project.back_end.repositories does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PrescriptionController.java:[23,88] cannot find symbol
+[ERROR]   symbol:   class Prescription
+[ERROR]   location: class com.project.back_end.controllers.PrescriptionController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PrescriptionService.java:[17,13] cannot find symbol
+[ERROR]   symbol:   class PrescriptionRepository
+[ERROR]   location: class com.project.back_end.services.PrescriptionService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PrescriptionService.java:[20,65] cannot find symbol
+[ERROR]   symbol:   class Prescription
+[ERROR]   location: class com.project.back_end.services.PrescriptionService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[2,2] cannot find symbol
+[ERROR]   symbol: class Controller
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[30,13] cannot find symbol
+[ERROR]   symbol:   class TokenValidationService
+[ERROR]   location: class com.project.back_end.mvc.DashboardController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/repo/PrescriptionRepository.java:[3,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/repo/PrescriptionRepository.java:[10,65] cannot find symbol
+[ERROR]   symbol: class Prescription
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/repo/PrescriptionRepository.java:[13,10] cannot find symbol
+[ERROR]   symbol:   class Prescription
+[ERROR]   location: interface com.project.back_end.repo.PrescriptionRepository
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[29,2] cannot find symbol
+[ERROR]   symbol:   class Autowired
+[ERROR]   location: class com.project.back_end.mvc.DashboardController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[34,35] cannot find symbol
+[ERROR]   symbol:   class PathVariable
+[ERROR]   location: class com.project.back_end.mvc.DashboardController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[33,6] cannot find symbol
+[ERROR]   symbol:   class GetMapping
+[ERROR]   location: class com.project.back_end.mvc.DashboardController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[48,36] cannot find symbol
+[ERROR]   symbol:   class PathVariable
+[ERROR]   location: class com.project.back_end.mvc.DashboardController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[47,6] cannot find symbol
+[ERROR]   symbol:   class GetMapping
+[ERROR]   location: class com.project.back_end.mvc.DashboardController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[30,13] bad operand type org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.lang.String>> for unary operator '!'
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[36,60] method getAppointment in class com.project.back_end.services.AppointmentService cannot be applied to given types;
+[ERROR]   required: java.lang.String,java.time.LocalDate,java.lang.String
+[ERROR]   found:    java.lang.String,java.lang.String
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[46,13] bad operand type org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.lang.String>> for unary operator '!'
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[51,13] bad operand type int for unary operator '!'
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[56,60] incompatible types: int cannot be converted to boolean
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[72,13] bad operand type org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.lang.String>> for unary operator '!'
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[77,63] incompatible types: org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.lang.String>> cannot be converted to boolean
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[93,13] bad operand type org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.lang.String>> for unary operator '!'
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[98,47] method cancelAppointment in class com.project.back_end.services.AppointmentService cannot be applied to given types;
+[ERROR]   required: long,java.lang.String
+[ERROR]   found:    java.lang.Long
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/AppointmentService.java:[68,42] cannot find symbol
+[ERROR]   symbol:   method extractIdFromToken(java.lang.String)
+[ERROR]   location: variable tokenService of type com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/AppointmentService.java:[85,37] cannot find symbol
+[ERROR]   symbol:   method extractIdFromToken(java.lang.String)
+[ERROR]   location: variable tokenService of type com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[52,9] cannot find symbol
+[ERROR]   symbol:   class Admin
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[66,14] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[74,18] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[80,9] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[92,9] cannot find symbol
+[ERROR]   symbol:   class Patient
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[99,9] cannot find symbol
+[ERROR]   symbol:   class Patient
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[115,43] cannot find symbol
+[ERROR]   symbol:   method extractUsername(java.lang.String)
+[ERROR]   location: variable tokenService of type com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[116,9] cannot find symbol
+[ERROR]   symbol:   class Patient
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[123,14] cannot find symbol
+[ERROR]   symbol:   class Appointment
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java:[55,20] cannot find symbol
+[ERROR]   symbol:   method parserBuilder()
+[ERROR]   location: class io.jsonwebtoken.Jwts
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[30,14] cannot find symbol
+[ERROR]   symbol:   class Appointment
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[31,62] cannot find symbol
+[ERROR]   symbol:   variable Appointment
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[77,9] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[94,14] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[101,14] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[108,14] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[115,14] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[122,14] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[129,14] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[41,36] cannot find symbol
+[ERROR]   symbol:   method extractEmail(java.lang.String)
+[ERROR]   location: variable tokenService of type com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[47,14] cannot find symbol
+[ERROR]   symbol:   class AppointmentDTO
+[ERROR]   location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[47,61] cannot find symbol
+[ERROR]   symbol:   method getAppointments()
+[ERROR]   location: class com.project.back_end.models.Patient
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[48,22] cannot find symbol
+[ERROR]   symbol:   class AppointmentDTO
+[ERROR]   location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[60,63] cannot find symbol
+[ERROR]   symbol:   method getAppointments()
+[ERROR]   location: class com.project.back_end.models.Patient
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[61,14] cannot find symbol
+[ERROR]   symbol:   class AppointmentDTO
+[ERROR]   location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[70,22] cannot find symbol
+[ERROR]   symbol:   class AppointmentDTO
+[ERROR]   location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[82,14] cannot find symbol
+[ERROR]   symbol:   class AppointmentDTO
+[ERROR]   location: class com.project.back_end.services.PatientService
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile (default-compile) on project back-end: Compilation failure
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:333)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:906)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:283)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:206)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:103)
+    at java.lang.reflect.Method.invoke (Method.java:580)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:283)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:226)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:407)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:348)
+Caused by: org.apache.maven.plugin.compiler.CompilationFailureException: Compilation failure
+    at org.apache.maven.plugin.compiler.AbstractCompilerMojo.execute (AbstractCompilerMojo.java:1309)
+    at org.apache.maven.plugin.compiler.CompilerMojo.execute (CompilerMojo.java:215)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:126)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:328)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:906)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:283)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:206)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:103)
+    at java.lang.reflect.Method.invoke (Method.java:580)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:283)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:226)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:407)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:348)
+[ERROR] 
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

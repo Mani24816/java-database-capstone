@@ -1,14 +1,15 @@
-package com.yourproject.service;
+package com.project.back_end.services;
 
-import com.yourproject.model.Admin;
-import com.yourproject.model.Doctor;
-import com.yourproject.model.Patient;
-import com.yourproject.repository.AdminRepository;
-import com.yourproject.repository.DoctorRepository;
-import com.yourproject.repository.PatientRepository;
+import com.project.back_end.repo.AdminRepository;
+import com.project.back_end.repo.DoctorRepository;
+import com.project.back_end.repo.PatientRepository;
+import com.project.back_end.models.Admin;
+import com.project.back_end.models.Doctor;
+import com.project.back_end.models.Patient;
 
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;
+
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -23,14 +24,12 @@ public class TokenService {
     private final DoctorRepository doctorRepository;
     private final PatientRepository patientRepository;
 
+    private SecretKey secretKey;
+
     @Value("${jwt.secret}")
     private String secret;
 
-    private SecretKey key;
-
-    public TokenService(AdminRepository adminRepository,
-                        DoctorRepository doctorRepository,
-                        PatientRepository patientRepository) {
+    public TokenService(AdminRepository adminRepository, DoctorRepository doctorRepository, PatientRepository patientRepository) {
         this.adminRepository = adminRepository;
         this.doctorRepository = doctorRepository;
         this.patientRepository = patientRepository;
@@ -38,10 +37,10 @@ public class TokenService {
 
     @PostConstruct
     public void init() {
-        this.key = Keys.hmacShaKeyFor(secret.getBytes());
+        this.secretKey = Keys.hmacShaKeyFor(secret.getBytes());
     }
 
-    // ✅ Generate JWT Token
+    // 🔐 Generate JWT token
     public String generateToken(String identifier) {
         return Jwts.builder()
                 .setSubject(identifier)
@@ -51,43 +50,45 @@ public class TokenService {
                 .compact();
     }
 
-    // ✅ Extract identifier (email or username) from token
+    // 🔍 Extract subject/identifier (email or username) from JWT
     public String extractIdentifier(String token) {
-        try {
-            return Jwts.parserBuilder()
-                    .setSigningKey(getSigningKey())
-                    .build()
-                    .parseClaimsJws(token)
-                    .getBody()
-                    .getSubject();
-        } catch (Exception e) {
-            return null;
-        }
+        return Jwts.parserBuilder()
+                .setSigningKey(getSigningKey())
+                .build()
+                .parseClaimsJws(token)
+                .getBody()
+                .getSubject();
     }
 
-    // ✅ Validate token for user type
+    // ✅ Validate JWT token for admin/doctor/patient
     public boolean validateToken(String token, String user) {
         try {
             String identifier = extractIdentifier(token);
-            if (identifier == null) return false;
 
             switch (user.toLowerCase()) {
                 case "admin":
-                    return adminRepository.findByUsername(identifier).isPresent();
+                    Admin admin = adminRepository.findByUsername(identifier);
+                    return admin != null;
+
                 case "doctor":
-                    return doctorRepository.findByEmail(identifier).isPresent();
+                    Doctor doctor = doctorRepository.findByEmail(identifier);
+                    return doctor != null;
+
                 case "patient":
-                    return patientRepository.findByEmail(identifier).isPresent();
+                    Patient patient = patientRepository.findByEmail(identifier);
+                    return patient != null;
+
                 default:
                     return false;
             }
-        } catch (JwtException | IllegalArgumentException e) {
+
+        } catch (ExpiredJwtException | MalformedJwtException | UnsupportedJwtException | IllegalArgumentException e) {
             return false;
         }
     }
 
-    // ✅ Retrieve Signing Key
+    // 🔑 Get signing key from secret
     private SecretKey getSigningKey() {
-        return this.key;
+        return this.secretKey;
     }
 }

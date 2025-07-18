@@ -1,14 +1,15 @@
-package com.project.back_end.service;
+package com.project.back_end.services;
 
-import com.project.back_end.dto.AppointmentDTO;
-import com.project.back_end.model.Appointment;
-import com.project.back_end.model.Patient;
+import com.project.back_end.models.Appointment;
+import com.project.back_end.models.Patient;
 import com.project.back_end.repo.AppointmentRepository;
 import com.project.back_end.repo.PatientRepository;
-import com.project.back_end.security.TokenService;
+import com.project.back_end.services.TokenService;
+import com.project.back_end.dto.AppointmentDTO;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -27,7 +28,6 @@ public class PatientService {
     @Autowired
     private TokenService tokenService;
 
-    /** 1. Create a new patient */
     public int createPatient(Patient patient) {
         try {
             patientRepository.save(patient);
@@ -37,97 +37,87 @@ public class PatientService {
         }
     }
 
-    /** 2. Get all appointments for a patient with token verification */
     public ResponseEntity<Map<String, Object>> getPatientAppointment(Long id, String token) {
-        Map<String, Object> response = new HashMap<>();
-        String email = tokenService.extractUsername(token);
-
-        Optional<Patient> optionalPatient = patientRepository.findByEmail(email);
-        if (optionalPatient.isEmpty() || !optionalPatient.get().getId().equals(id)) {
-            response.put("error", "Unauthorized or patient not found");
-            return new ResponseEntity<>(response, HttpStatus.UNAUTHORIZED);
+        String email = tokenService.extractEmail(token);
+        Optional<Patient> optionalPatient = patientRepository.findById(id);
+        if (optionalPatient.isEmpty() || !optionalPatient.get().getEmail().equals(email)) {
+            return new ResponseEntity<>(Map.of("error", "Unauthorized"), HttpStatus.UNAUTHORIZED);
         }
 
-        List<Appointment> appointments = appointmentRepository.findByPatientId(id);
-        List<AppointmentDTO> dtoList = appointments.stream()
+        List<AppointmentDTO> dtoList = optionalPatient.get().getAppointments().stream()
                 .map(AppointmentDTO::new)
                 .collect(Collectors.toList());
 
-        response.put("appointments", dtoList);
-        return new ResponseEntity<>(response, HttpStatus.OK);
+        return new ResponseEntity<>(Map.of("appointments", dtoList), HttpStatus.OK);
     }
 
-    /** 3. Filter appointments by condition (past/future) */
     public ResponseEntity<Map<String, Object>> filterByCondition(String condition, Long id) {
-        Map<String, Object> response = new HashMap<>();
-        LocalDateTime now = LocalDateTime.now();
-
-        List<Appointment> appointments = appointmentRepository.findByPatientId(id);
-        List<AppointmentDTO> filtered;
-
-        if (condition.equalsIgnoreCase("past")) {
-            filtered = appointments.stream()
-                    .filter(a -> a.getAppointmentTime().isBefore(now))
-                    .map(AppointmentDTO::new)
-                    .collect(Collectors.toList());
-        } else if (condition.equalsIgnoreCase("future")) {
-            filtered = appointments.stream()
-                    .filter(a -> a.getAppointmentTime().isAfter(now))
-                    .map(AppointmentDTO::new)
-                    .collect(Collectors.toList());
-        } else {
-            response.put("error", "Invalid condition. Use 'past' or 'future'.");
-            return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
-        }
-
-        response.put("appointments", filtered);
-        return new ResponseEntity<>(response, HttpStatus.OK);
-    }
-
-    /** 4. Filter appointments by doctor name */
-    public ResponseEntity<Map<String, Object>> filterByDoctor(String name, Long patientId) {
-        Map<String, Object> response = new HashMap<>();
-
-        List<Appointment> appointments = appointmentRepository.findByPatientId(patientId);
-        List<AppointmentDTO> filtered = appointments.stream()
-                .filter(a -> a.getDoctorName().toLowerCase().contains(name.toLowerCase()))
-                .map(AppointmentDTO::new)
-                .collect(Collectors.toList());
-
-        response.put("appointments", filtered);
-        return new ResponseEntity<>(response, HttpStatus.OK);
-    }
-
-    /** 5. Filter appointments by doctor name and condition */
-    public ResponseEntity<Map<String, Object>> filterByDoctorAndCondition(String condition, String name, long patientId) {
-        Map<String, Object> response = new HashMap<>();
-        LocalDateTime now = LocalDateTime.now();
-
-        List<Appointment> appointments = appointmentRepository.findByPatientId(patientId);
-        List<AppointmentDTO> filtered = appointments.stream()
-                .filter(a -> a.getDoctorName().toLowerCase().contains(name.toLowerCase()))
-                .filter(a -> condition.equalsIgnoreCase("past") ?
-                        a.getAppointmentTime().isBefore(now) :
-                        a.getAppointmentTime().isAfter(now))
-                .map(AppointmentDTO::new)
-                .collect(Collectors.toList());
-
-        response.put("appointments", filtered);
-        return new ResponseEntity<>(response, HttpStatus.OK);
-    }
-
-    /** 6. Get patient details from JWT token */
-    public ResponseEntity<Map<String, Object>> getPatientDetails(String token) {
-        Map<String, Object> response = new HashMap<>();
-        String email = tokenService.extractUsername(token);
-
-        Optional<Patient> optionalPatient = patientRepository.findByEmail(email);
+        Optional<Patient> optionalPatient = patientRepository.findById(id);
         if (optionalPatient.isEmpty()) {
-            response.put("error", "Patient not found");
-            return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(Map.of("error", "Patient not found"), HttpStatus.NOT_FOUND);
         }
 
-        response.put("patient", optionalPatient.get());
-        return new ResponseEntity<>(response, HttpStatus.OK);
+        List<Appointment> appointments = optionalPatient.get().getAppointments();
+        List<AppointmentDTO> filtered = appointments.stream()
+                .filter(app -> {
+                    if ("past".equalsIgnoreCase(condition)) {
+                        return app.getAppointmentTime().isBefore(LocalDateTime.now()) && app.getStatus() == 1;
+                    } else if ("future".equalsIgnoreCase(condition)) {
+                        return app.getAppointmentTime().isAfter(LocalDateTime.now()) && app.getStatus() == 0;
+                    }
+                    return false;
+                })
+                .map(AppointmentDTO::new)
+                .collect(Collectors.toList());
+
+        return new ResponseEntity<>(Map.of("appointments", filtered), HttpStatus.OK);
+    }
+
+    public ResponseEntity<Map<String, Object>> filterByDoctor(String name, Long patientId) {
+        Optional<Patient> optionalPatient = patientRepository.findById(patientId);
+        if (optionalPatient.isEmpty()) {
+            return new ResponseEntity<>(Map.of("error", "Patient not found"), HttpStatus.NOT_FOUND);
+        }
+
+        List<AppointmentDTO> filtered = optionalPatient.get().getAppointments().stream()
+                .filter(app -> app.getDoctor().getName().equalsIgnoreCase(name))
+                .map(AppointmentDTO::new)
+                .collect(Collectors.toList());
+
+        return new ResponseEntity<>(Map.of("appointments", filtered), HttpStatus.OK);
+    }
+
+    public ResponseEntity<Map<String, Object>> filterByDoctorAndCondition(String condition, String name, long patientId) {
+        Optional<Patient> optionalPatient = patientRepository.findById(patientId);
+        if (optionalPatient.isEmpty()) {
+            return new ResponseEntity<>(Map.of("error", "Patient not found"), HttpStatus.NOT_FOUND);
+        }
+
+        List<Appointment> appointments = optionalPatient.get().getAppointments();
+        List<AppointmentDTO> filtered = appointments.stream()
+                .filter(app -> app.getDoctor().getName().equalsIgnoreCase(name))
+                .filter(app -> {
+                    if ("past".equalsIgnoreCase(condition)) {
+                        return app.getAppointmentTime().isBefore(LocalDateTime.now()) && app.getStatus() == 1;
+                    } else if ("future".equalsIgnoreCase(condition)) {
+                        return app.getAppointmentTime().isAfter(LocalDateTime.now()) && app.getStatus() == 0;
+                    }
+                    return false;
+                })
+                .map(AppointmentDTO::new)
+                .collect(Collectors.toList());
+
+        return new ResponseEntity<>(Map.of("appointments", filtered), HttpStatus.OK);
+    }
+
+    public ResponseEntity<Map<String, Object>> getPatientDetails(String token) {
+        String email = tokenService.extractEmail(token);
+        Patient patient = patientRepository.findByEmail(email);
+
+        if (patient == null) {
+            return new ResponseEntity<>(Map.of("error", "Patient not found"), HttpStatus.NOT_FOUND);
+        }
+
+        return new ResponseEntity<>(Map.of("patient", patient), HttpStatus.OK);
     }
 }

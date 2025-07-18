@@ -1,0 +1,2070 @@
+Apache Maven 3.9.5 (57804ffe001d7215b5e7bcb531cf83df38f93546)
+Maven home: /usr/local/apache-maven-3.9.5
+Java version: 21.0.6, vendor: Oracle Corporation, runtime: /usr/lib/jvm/jdk-21.0.6-oracle-x64
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "6.8.0-63-generic", arch: "amd64", family: "unix"
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: javax.annotation.* < plexus.core
+[DEBUG]   Imported: javax.annotation.security.* < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.apache.maven.graph < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.util < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.fusesource.jansi.* < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: org.slf4j.event.* < plexus.core
+[DEBUG]   Imported: org.slf4j.helpers.* < plexus.core
+[DEBUG]   Imported: org.slf4j.spi.* < plexus.core
+[DEBUG] Populating class realm maven.api
+[DEBUG] Created adapter factory; available factories [file-lock, rwlock-local, semaphore-local, noop]; available name mappers [discriminating, file-gav, file-hgav, file-static, gav, static]
+[INFO] Error stacktraces are turned on.
+[DEBUG] Message scheme: color
+[DEBUG] Message styles: debug info warning error success failure strong mojo project
+[DEBUG] Reading global settings from /usr/local/apache-maven-3.9.5/conf/settings.xml
+[DEBUG] Reading user settings from /home/theia/.m2/settings.xml
+[DEBUG] Reading global toolchains from /usr/local/apache-maven-3.9.5/conf/toolchains.xml
+[DEBUG] Reading user toolchains from /home/theia/.m2/toolchains.xml
+[DEBUG] Using local repository at /home/theia/.m2/repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /home/theia/.m2/repository
+[INFO] Scanning for projects...
+[DEBUG] Creating adapter using nameMapper 'gav' and factory 'rwlock-local'
+[DEBUG] Extension realms for project com.project:back-end:jar:0.0.1-SNAPSHOT: (none)
+[DEBUG] Looking up lifecycle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project org.springframework.boot:spring-boot-starter-parent:pom:3.4.4: (none)
+[DEBUG] Looking up lifecycle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project org.springframework.boot:spring-boot-dependencies:pom:3.4.4: (none)
+[DEBUG] Looking up lifecycle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: com.project:back-end:jar:0.0.1-SNAPSHOT
+[DEBUG] Tasks:   [clean, install]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] ------------------------< com.project:back-end >------------------------
+[INFO] Building back-end 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       com.project:back-end:0.0.1-SNAPSHOT
+[DEBUG] Dependencies (collect): [compile+runtime]
+[DEBUG] Dependencies (resolve): [compile, compile+runtime, runtime, test]
+[DEBUG] Repositories (dependencies): [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] Repositories (plugins)     : [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-clean-plugin:3.4.1:clean (default-clean)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <directory default-value="${project.build.directory}"/>
+  <excludeDefaultDirectories default-value="false">${maven.clean.excludeDefaultDirectories}</excludeDefaultDirectories>
+  <failOnError default-value="true">${maven.clean.failOnError}</failOnError>
+  <fast default-value="false">${maven.clean.fast}</fast>
+  <fastDir>${maven.clean.fastDir}</fastDir>
+  <fastMode default-value="background">${maven.clean.fastMode}</fastMode>
+  <followSymLinks default-value="false">${maven.clean.followSymLinks}</followSymLinks>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <reportDirectory default-value="${project.build.outputDirectory}"/>
+  <retryOnError default-value="true">${maven.clean.retryOnError}</retryOnError>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.clean.skip}</skip>
+  <testOutputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <verbose>${maven.clean.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.3.1:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <buildFilters default-value="${project.build.filters}"/>
+  <delimiters>
+    <delimiter>@</delimiter>
+  </delimiters>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <escapeWindowsPaths default-value="true"/>
+  <fileNameFiltering default-value="false"/>
+  <includeEmptyDirs default-value="false"/>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false"/>
+  <project default-value="${project}"/>
+  <propertiesEncoding>UTF-8</propertiesEncoding>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.resources.skip}</skip>
+  <supportMultiLineFiltering default-value="false"/>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true">false</useDefaultDelimiters>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <annotationProcessorPathsUseDepMgmt default-value="false"/>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <compilePath default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <createMissingPackageInfoClass default-value="true">${maven.compiler.createMissingPackageInfoClass}</createMissingPackageInfoClass>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debugFileName default-value="javac"/>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <enablePreview default-value="false">${maven.compiler.enablePreview}</enablePreview>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <fileExtensions default-value="class,jar"/>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <forceLegacyJavacApi default-value="false">${maven.compiler.forceLegacyJavacApi}</forceLegacyJavacApi>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <implicit>${maven.compiler.implicit}</implicit>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}">${maven.compiler.outputDirectory}</outputDirectory>
+  <outputTimestamp default-value="${project.build.outputTimestamp}"/>
+  <parameters default-value="false">true</parameters>
+  <proc>${maven.compiler.proc}</proc>
+  <project default-value="${project}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <release>${maven.compiler.release}</release>
+  <session default-value="${session}"/>
+  <showCompilationChanges default-value="false">${maven.compiler.showCompilationChanges}</showCompilationChanges>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="true">${maven.compiler.showWarnings}</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.8">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.8">${maven.compiler.target}</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.3.1:testResources (default-testResources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <buildFilters default-value="${project.build.filters}"/>
+  <delimiters>
+    <delimiter>@</delimiter>
+  </delimiters>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <escapeWindowsPaths default-value="true"/>
+  <fileNameFiltering default-value="false"/>
+  <includeEmptyDirs default-value="false"/>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <overwrite default-value="false"/>
+  <project default-value="${project}"/>
+  <propertiesEncoding>UTF-8</propertiesEncoding>
+  <resources default-value="${project.testResources}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <supportMultiLineFiltering default-value="false"/>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true">false</useDefaultDelimiters>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.13.0:testCompile (default-testCompile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <annotationProcessorPathsUseDepMgmt default-value="false"/>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <compileSourceRoots default-value="${project.testCompileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <createMissingPackageInfoClass default-value="true">${maven.compiler.createMissingPackageInfoClass}</createMissingPackageInfoClass>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debugFileName default-value="javac-test"/>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <enablePreview default-value="false">${maven.compiler.enablePreview}</enablePreview>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <fileExtensions default-value="class,jar"/>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <forceLegacyJavacApi default-value="false">${maven.compiler.forceLegacyJavacApi}</forceLegacyJavacApi>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedTestSourcesDirectory default-value="${project.build.directory}/generated-test-sources/test-annotations"/>
+  <implicit>${maven.compiler.implicit}</implicit>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <outputTimestamp default-value="${project.build.outputTimestamp}"/>
+  <parameters default-value="false">true</parameters>
+  <proc>${maven.compiler.proc}</proc>
+  <project default-value="${project}"/>
+  <release>${maven.compiler.release}</release>
+  <session default-value="${session}"/>
+  <showCompilationChanges default-value="false">${maven.compiler.showCompilationChanges}</showCompilationChanges>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="true">${maven.compiler.showWarnings}</showWarnings>
+  <skip>${maven.test.skip}</skip>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.8">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.8">${maven.compiler.target}</target>
+  <testPath default-value="${project.testClasspathElements}"/>
+  <testRelease>${maven.compiler.testRelease}</testRelease>
+  <testSource>${maven.compiler.testSource}</testSource>
+  <testTarget>${maven.compiler.testTarget}</testTarget>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <useModulePath default-value="true"/>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-surefire-plugin:3.5.2:test (default-test)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <additionalClasspathDependencies>${maven.test.additionalClasspathDependencies}</additionalClasspathDependencies>
+  <additionalClasspathElements>${maven.test.additionalClasspath}</additionalClasspathElements>
+  <argLine>${argLine}</argLine>
+  <basedir default-value="${basedir}"/>
+  <childDelegation default-value="false">${childDelegation}</childDelegation>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <classpathDependencyExcludes>${maven.test.dependency.excludes}</classpathDependencyExcludes>
+  <debugForkedProcess>${maven.surefire.debug}</debugForkedProcess>
+  <dependenciesToScan>${dependenciesToScan}</dependenciesToScan>
+  <disableXmlReport default-value="false">${disableXmlReport}</disableXmlReport>
+  <enableAssertions default-value="true">${enableAssertions}</enableAssertions>
+  <enableOutErrElements default-value="true">${enableOutErrElements}</enableOutErrElements>
+  <enableProcessChecker>${surefire.enableProcessChecker}</enableProcessChecker>
+  <enablePropertiesElement default-value="true">${enablePropertiesElement}</enablePropertiesElement>
+  <encoding default-value="${project.reporting.outputEncoding}">${surefire.encoding}</encoding>
+  <excludeJUnit5Engines>${surefire.excludeJUnit5Engines}</excludeJUnit5Engines>
+  <excludedEnvironmentVariables>${surefire.excludedEnvironmentVariables}</excludedEnvironmentVariables>
+  <excludedGroups>${excludedGroups}</excludedGroups>
+  <excludes>${surefire.excludes}</excludes>
+  <excludesFile>${surefire.excludesFile}</excludesFile>
+  <failIfNoSpecifiedTests default-value="true">${surefire.failIfNoSpecifiedTests}</failIfNoSpecifiedTests>
+  <failIfNoTests default-value="false">${failIfNoTests}</failIfNoTests>
+  <failOnFlakeCount default-value="0">${surefire.failOnFlakeCount}</failOnFlakeCount>
+  <forkCount default-value="1">${forkCount}</forkCount>
+  <forkNode>${surefire.forkNode}</forkNode>
+  <forkedProcessExitTimeoutInSeconds default-value="30">${surefire.exitTimeout}</forkedProcessExitTimeoutInSeconds>
+  <forkedProcessTimeoutInSeconds>${surefire.timeout}</forkedProcessTimeoutInSeconds>
+  <groups>${groups}</groups>
+  <includeJUnit5Engines>${surefire.includeJUnit5Engines}</includeJUnit5Engines>
+  <includes>${surefire.includes}</includes>
+  <includesFile>${surefire.includesFile}</includesFile>
+  <junitArtifactName default-value="junit:junit">${junitArtifactName}</junitArtifactName>
+  <jvm>${jvm}</jvm>
+  <objectFactory>${objectFactory}</objectFactory>
+  <parallel>${parallel}</parallel>
+  <parallelMavenExecution default-value="${session.parallel}"/>
+  <parallelOptimized default-value="true">${parallelOptimized}</parallelOptimized>
+  <parallelTestsTimeoutForcedInSeconds>${surefire.parallel.forcedTimeout}</parallelTestsTimeoutForcedInSeconds>
+  <parallelTestsTimeoutInSeconds>${surefire.parallel.timeout}</parallelTestsTimeoutInSeconds>
+  <perCoreThreadCount default-value="true">${perCoreThreadCount}</perCoreThreadCount>
+  <pluginArtifactMap>${plugin.artifactMap}</pluginArtifactMap>
+  <pluginDescriptor default-value="${plugin}"/>
+  <printSummary default-value="true">${surefire.printSummary}</printSummary>
+  <project default-value="${project}"/>
+  <projectArtifactMap>${project.artifactMap}</projectArtifactMap>
+  <projectBuildDirectory default-value="${project.build.directory}"/>
+  <promoteUserPropertiesToSystemProperties default-value="true"/>
+  <redirectTestOutputToFile default-value="false">${maven.test.redirectTestOutputToFile}</redirectTestOutputToFile>
+  <reportFormat default-value="brief">${surefire.reportFormat}</reportFormat>
+  <reportNameSuffix default-value="">${surefire.reportNameSuffix}</reportNameSuffix>
+  <reportsDirectory default-value="${project.build.directory}/surefire-reports"/>
+  <rerunFailingTestsCount default-value="0">${surefire.rerunFailingTestsCount}</rerunFailingTestsCount>
+  <reuseForks default-value="true">${reuseForks}</reuseForks>
+  <runOrder default-value="filesystem">${surefire.runOrder}</runOrder>
+  <runOrderRandomSeed>${surefire.runOrder.random.seed}</runOrderRandomSeed>
+  <session default-value="${session}"/>
+  <shutdown default-value="exit">${surefire.shutdown}</shutdown>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <skipAfterFailureCount default-value="0">${surefire.skipAfterFailureCount}</skipAfterFailureCount>
+  <skipExec>${maven.test.skip.exec}</skipExec>
+  <skipTests default-value="false">${skipTests}</skipTests>
+  <suiteXmlFiles>${surefire.suiteXmlFiles}</suiteXmlFiles>
+  <systemPropertiesFile>${surefire.systemPropertiesFile}</systemPropertiesFile>
+  <tempDir default-value="surefire">${tempDir}</tempDir>
+  <test>${test}</test>
+  <testClassesDirectory default-value="${project.build.testOutputDirectory}"/>
+  <testFailureIgnore default-value="false">${maven.test.failure.ignore}</testFailureIgnore>
+  <testNGArtifactName default-value="org.testng:testng">${testNGArtifactName}</testNGArtifactName>
+  <testSourceDirectory default-value="${project.build.testSourceDirectory}"/>
+  <threadCount>${threadCount}</threadCount>
+  <threadCountClasses default-value="0">${threadCountClasses}</threadCountClasses>
+  <threadCountMethods default-value="0">${threadCountMethods}</threadCountMethods>
+  <threadCountSuites default-value="0">${threadCountSuites}</threadCountSuites>
+  <trimStackTrace default-value="false">${trimStackTrace}</trimStackTrace>
+  <useFile default-value="true">${surefire.useFile}</useFile>
+  <useManifestOnlyJar default-value="true">${surefire.useManifestOnlyJar}</useManifestOnlyJar>
+  <useModulePath default-value="true">${surefire.useModulePath}</useModulePath>
+  <useSystemClassLoader default-value="true">${surefire.useSystemClassLoader}</useSystemClassLoader>
+  <useUnlimitedThreads default-value="false">${useUnlimitedThreads}</useUnlimitedThreads>
+  <workingDirectory>${basedir}</workingDirectory>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-jar-plugin:3.4.2:jar (default-jar)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <archive>
+    <manifest>
+      <mainClass>${start-class}</mainClass>
+      <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+    </manifest>
+  </archive>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <detectMultiReleaseJar default-value="true">${maven.jar.detectMultiReleaseJar}</detectMultiReleaseJar>
+  <finalName default-value="${project.build.finalName}"/>
+  <forceCreation default-value="false">${maven.jar.forceCreation}</forceCreation>
+  <outputDirectory default-value="${project.build.directory}"/>
+  <outputTimestamp default-value="${project.build.outputTimestamp}"/>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+  <skipIfEmpty default-value="false"/>
+  <useDefaultManifestFile default-value="false">${jar.useDefaultManifestFile}</useDefaultManifestFile>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.springframework.boot:spring-boot-maven-plugin:3.4.4:repackage (repackage)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <attach default-value="true"/>
+  <excludeDevtools default-value="true">${spring-boot.repackage.excludeDevtools}</excludeDevtools>
+  <excludeDockerCompose default-value="true">${spring-boot.repackage.excludeDockerCompose}</excludeDockerCompose>
+  <excludeGroupIds default-value="">${spring-boot.excludeGroupIds}</excludeGroupIds>
+  <excludes>${spring-boot.excludes}</excludes>
+  <executable default-value="false"/>
+  <finalName default-value="${project.build.finalName}"/>
+  <includeSystemScope default-value="false"/>
+  <includeTools default-value="true"/>
+  <includes>${spring-boot.includes}</includes>
+  <layout>${spring-boot.repackage.layout}</layout>
+  <mainClass>${start-class}</mainClass>
+  <outputDirectory default-value="${project.build.directory}"/>
+  <outputTimestamp default-value="${project.build.outputTimestamp}"/>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${spring-boot.repackage.skip}</skip>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-install-plugin:3.1.4:install (default-install)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <allowIncompleteProjects default-value="false">${allowIncompleteProjects}</allowIncompleteProjects>
+  <installAtEnd default-value="false">${installAtEnd}</installAtEnd>
+  <pluginDescriptor default-value="${plugin}"/>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.install.skip}</skip>
+</configuration>
+[DEBUG] =======================================================================
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for vaadin-snapshots (http://oss.sonatype.org/content/repositories/vaadin-snapshots/).
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for vaadin-releases (http://oss.sonatype.org/content/repositories/vaadin-releases/).
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=1222164, ConflictMarker.markTime=588572, ConflictMarker.nodeCount=214, ConflictIdSorter.graphTime=700335, ConflictIdSorter.topsortTime=440770, ConflictIdSorter.conflictIdCount=106, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=18550523, ConflictResolver.conflictItemCount=208, DfDependencyCollector.collectTime=655727106, DfDependencyCollector.transformTime=23582163}
+[DEBUG] com.project:back-end:jar:0.0.1-SNAPSHOT
+[DEBUG]    org.springframework.boot:spring-boot-starter-thymeleaf:jar:3.4.4:compile
+[DEBUG]       org.springframework.boot:spring-boot-starter:jar:3.4.4:compile (version managed from 3.4.4)
+[DEBUG]          org.springframework.boot:spring-boot-starter-logging:jar:3.4.4:compile (version managed from 3.4.4)
+[DEBUG]             ch.qos.logback:logback-classic:jar:1.5.18:compile (version managed from 1.5.18)
+[DEBUG]                ch.qos.logback:logback-core:jar:1.5.18:compile (version managed from 1.5.18)
+[DEBUG]             org.apache.logging.log4j:log4j-to-slf4j:jar:2.24.3:compile (version managed from 2.24.3)
+[DEBUG]                org.apache.logging.log4j:log4j-api:jar:2.24.3:compile (version managed from 2.24.3)
+[DEBUG]             org.slf4j:jul-to-slf4j:jar:2.0.17:compile (version managed from 2.0.17)
+[DEBUG]          jakarta.annotation:jakarta.annotation-api:jar:2.1.1:compile (version managed from 2.1.1)
+[DEBUG]          org.yaml:snakeyaml:jar:2.3:compile (version managed from 2.3)
+[DEBUG]       org.thymeleaf:thymeleaf-spring6:jar:3.1.3.RELEASE:compile (version managed from 3.1.3.RELEASE)
+[DEBUG]          org.thymeleaf:thymeleaf:jar:3.1.3.RELEASE:compile (version managed from 3.1.3.RELEASE)
+[DEBUG]             org.attoparser:attoparser:jar:2.0.7.RELEASE:compile
+[DEBUG]             org.unbescape:unbescape:jar:1.1.6.RELEASE:compile
+[DEBUG]          org.slf4j:slf4j-api:jar:2.0.17:compile (version managed from 2.0.16)
+[DEBUG]    org.springframework.boot:spring-boot-starter-data-jpa:jar:3.4.4:compile
+[DEBUG]       org.springframework.boot:spring-boot-starter-jdbc:jar:3.4.4:compile (version managed from 3.4.4)
+[DEBUG]          com.zaxxer:HikariCP:jar:5.1.0:compile (version managed from 5.1.0)
+[DEBUG]          org.springframework:spring-jdbc:jar:6.2.5:compile (version managed from 6.2.5)
+[DEBUG]       org.hibernate.orm:hibernate-core:jar:6.6.11.Final:compile (version managed from 6.6.11.Final)
+[DEBUG]          jakarta.persistence:jakarta.persistence-api:jar:3.1.0:compile (version managed from 3.1.0)
+[DEBUG]          jakarta.transaction:jakarta.transaction-api:jar:2.0.1:compile (version managed from 2.0.1)
+[DEBUG]          org.jboss.logging:jboss-logging:jar:3.6.1.Final:compile (version managed from 3.5.0.Final)
+[DEBUG]          org.hibernate.common:hibernate-commons-annotations:jar:7.0.3.Final:runtime
+[DEBUG]          io.smallrye:jandex:jar:3.2.0:runtime
+[DEBUG]          com.fasterxml:classmate:jar:1.7.0:compile (version managed from 1.5.1)
+[DEBUG]          net.bytebuddy:byte-buddy:jar:1.15.11:runtime (version managed from 1.15.11)
+[DEBUG]          org.glassfish.jaxb:jaxb-runtime:jar:4.0.5:runtime (version managed from 4.0.2)
+[DEBUG]             org.glassfish.jaxb:jaxb-core:jar:4.0.5:runtime (version managed from 4.0.5)
+[DEBUG]                org.eclipse.angus:angus-activation:jar:2.0.2:runtime (version managed from 2.0.2)
+[DEBUG]                org.glassfish.jaxb:txw2:jar:4.0.5:runtime (version managed from 4.0.5)
+[DEBUG]                com.sun.istack:istack-commons-runtime:jar:4.1.2:runtime (version managed from 4.1.2)
+[DEBUG]          jakarta.inject:jakarta.inject-api:jar:2.0.1:runtime (version managed from 2.0.1)
+[DEBUG]          org.antlr:antlr4-runtime:jar:4.13.0:compile
+[DEBUG]       org.springframework.data:spring-data-jpa:jar:3.4.4:compile (version managed from 3.4.4)
+[DEBUG]          org.springframework.data:spring-data-commons:jar:3.4.4:compile (version managed from 3.4.4)
+[DEBUG]          org.springframework:spring-orm:jar:6.2.5:compile (version managed from 6.2.4)
+[DEBUG]          org.springframework:spring-context:jar:6.2.5:compile (version managed from 6.2.4)
+[DEBUG]          org.springframework:spring-aop:jar:6.2.5:compile (version managed from 6.2.4)
+[DEBUG]          org.springframework:spring-tx:jar:6.2.5:compile (version managed from 6.2.4)
+[DEBUG]          org.springframework:spring-beans:jar:6.2.5:compile (version managed from 6.2.4)
+[DEBUG]       org.springframework:spring-aspects:jar:6.2.5:compile (version managed from 6.2.5)
+[DEBUG]          org.aspectj:aspectjweaver:jar:1.9.23:compile (version managed from 1.9.22.1)
+[DEBUG]    org.springframework.boot:spring-boot-starter-data-mongodb:jar:3.4.4:compile
+[DEBUG]       org.mongodb:mongodb-driver-sync:jar:5.2.1:compile (version managed from 5.2.1)
+[DEBUG]          org.mongodb:bson:jar:5.2.1:compile (version managed from 5.2.1)
+[DEBUG]          org.mongodb:mongodb-driver-core:jar:5.2.1:compile (version managed from 5.2.1)
+[DEBUG]             org.mongodb:bson-record-codec:jar:5.2.1:runtime (version managed from 5.2.1)
+[DEBUG]       org.springframework.data:spring-data-mongodb:jar:4.4.4:compile (version managed from 4.4.4)
+[DEBUG]          org.springframework:spring-expression:jar:6.2.5:compile (version managed from 6.2.4)
+[DEBUG]    org.springframework.boot:spring-boot-starter-web:jar:3.4.4:compile
+[DEBUG]       org.springframework.boot:spring-boot-starter-json:jar:3.4.4:compile (version managed from 3.4.4)
+[DEBUG]          com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.18.3:compile (version managed from 2.18.3)
+[DEBUG]          com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.18.3:compile (version managed from 2.18.3)
+[DEBUG]          com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.18.3:compile (version managed from 2.18.3)
+[DEBUG]       org.springframework.boot:spring-boot-starter-tomcat:jar:3.4.4:compile (version managed from 3.4.4)
+[DEBUG]          org.apache.tomcat.embed:tomcat-embed-core:jar:10.1.39:compile (version managed from 10.1.39)
+[DEBUG]          org.apache.tomcat.embed:tomcat-embed-websocket:jar:10.1.39:compile (version managed from 10.1.39)
+[DEBUG]       org.springframework:spring-web:jar:6.2.5:compile (version managed from 6.2.5)
+[DEBUG]          io.micrometer:micrometer-observation:jar:1.14.5:compile (version managed from 1.14.5)
+[DEBUG]             io.micrometer:micrometer-commons:jar:1.14.5:compile (version managed from 1.14.5)
+[DEBUG]       org.springframework:spring-webmvc:jar:6.2.5:compile (version managed from 6.2.5)
+[DEBUG]    com.mysql:mysql-connector-j:jar:9.1.0:runtime (exclusions managed from [com.google.protobuf:protobuf-java:*:*])
+[DEBUG]    org.springframework.boot:spring-boot-starter-test:jar:3.4.4:test
+[DEBUG]       org.springframework.boot:spring-boot-test:jar:3.4.4:test (version managed from 3.4.4)
+[DEBUG]       org.springframework.boot:spring-boot-test-autoconfigure:jar:3.4.4:test (version managed from 3.4.4)
+[DEBUG]       com.jayway.jsonpath:json-path:jar:2.9.0:test (version managed from 2.9.0)
+[DEBUG]       jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.2:runtime (version managed from 4.0.2)
+[DEBUG]          jakarta.activation:jakarta.activation-api:jar:2.1.3:runtime (version managed from 2.1.3)
+[DEBUG]       net.minidev:json-smart:jar:2.5.2:test (version managed from 2.5.2)
+[DEBUG]          net.minidev:accessors-smart:jar:2.5.2:test
+[DEBUG]             org.ow2.asm:asm:jar:9.7.1:test
+[DEBUG]       org.assertj:assertj-core:jar:3.26.3:test (version managed from 3.26.3)
+[DEBUG]       org.awaitility:awaitility:jar:4.2.2:test (version managed from 4.2.2)
+[DEBUG]       org.hamcrest:hamcrest:jar:2.2:test (version managed from 2.2)
+[DEBUG]       org.junit.jupiter:junit-jupiter:jar:5.11.4:test (version managed from 5.11.4)
+[DEBUG]          org.junit.jupiter:junit-jupiter-api:jar:5.11.4:test (version managed from 5.11.4)
+[DEBUG]             org.opentest4j:opentest4j:jar:1.3.0:test
+[DEBUG]             org.junit.platform:junit-platform-commons:jar:1.11.4:test (version managed from 1.11.4)
+[DEBUG]             org.apiguardian:apiguardian-api:jar:1.1.2:test
+[DEBUG]          org.junit.jupiter:junit-jupiter-params:jar:5.11.4:test (version managed from 5.11.4)
+[DEBUG]          org.junit.jupiter:junit-jupiter-engine:jar:5.11.4:test (version managed from 5.11.4)
+[DEBUG]             org.junit.platform:junit-platform-engine:jar:1.11.4:test (version managed from 1.11.4)
+[DEBUG]       org.mockito:mockito-core:jar:5.14.2:test (version managed from 5.14.2)
+[DEBUG]          net.bytebuddy:byte-buddy-agent:jar:1.15.11:test (version managed from 1.15.4)
+[DEBUG]          org.objenesis:objenesis:jar:3.3:test
+[DEBUG]       org.mockito:mockito-junit-jupiter:jar:5.14.2:test (version managed from 5.14.2)
+[DEBUG]       org.skyscreamer:jsonassert:jar:1.5.3:test (version managed from 1.5.3)
+[DEBUG]          com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[DEBUG]       org.springframework:spring-core:jar:6.2.5:compile (version managed from 6.2.5)
+[DEBUG]          org.springframework:spring-jcl:jar:6.2.5:compile (version managed from 6.2.5)
+[DEBUG]       org.springframework:spring-test:jar:6.2.5:test (version managed from 6.2.5)
+[DEBUG]       org.xmlunit:xmlunit-core:jar:2.10.0:test (version managed from 2.10.0)
+[DEBUG]    org.springframework.boot:spring-boot-starter-validation:jar:3.4.4:compile
+[DEBUG]       org.apache.tomcat.embed:tomcat-embed-el:jar:10.1.39:compile (version managed from 10.1.39)
+[DEBUG]       org.hibernate.validator:hibernate-validator:jar:8.0.2.Final:compile (version managed from 8.0.2.Final)
+[DEBUG]          jakarta.validation:jakarta.validation-api:jar:3.0.2:compile (version managed from 3.0.2)
+[DEBUG]    org.springframework.boot:spring-boot-devtools:jar:3.4.4:runtime (optional)
+[DEBUG]       org.springframework.boot:spring-boot:jar:3.4.4:compile (version managed from 3.4.4)
+[DEBUG]       org.springframework.boot:spring-boot-autoconfigure:jar:3.4.4:compile (version managed from 3.4.4)
+[DEBUG]    io.jsonwebtoken:jjwt-api:jar:0.12.6:compile
+[DEBUG]    io.jsonwebtoken:jjwt-impl:jar:0.12.6:runtime
+[DEBUG]    io.jsonwebtoken:jjwt-jackson:jar:0.12.6:runtime
+[DEBUG]       com.fasterxml.jackson.core:jackson-databind:jar:2.18.3:compile (version managed from 2.12.7.1)
+[DEBUG]          com.fasterxml.jackson.core:jackson-annotations:jar:2.18.3:compile (version managed from 2.18.3)
+[DEBUG]          com.fasterxml.jackson.core:jackson-core:jar:2.18.3:compile (version managed from 2.18.3)
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ back-end ---
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=82543, ConflictMarker.markTime=106835, ConflictMarker.nodeCount=2, ConflictIdSorter.graphTime=11854, ConflictIdSorter.topsortTime=18977, ConflictIdSorter.conflictIdCount=2, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=156603, ConflictResolver.conflictItemCount=2, DfDependencyCollector.collectTime=20222216, DfDependencyCollector.transformTime=419625}
+[DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:3.4.1
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:4.0.1:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-clean-plugin:3.4.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-clean-plugin:3.4.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-clean-plugin:3.4.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-clean-plugin:jar:3.4.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:4.0.1
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-clean-plugin:3.4.1:clean from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-clean-plugin:3.4.1, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@639fee48]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-clean-plugin:3.4.1:clean:default-clean' with basic configurator -->
+[DEBUG]   (f) directory = /home/project/java-database-capstone/app/target
+[DEBUG]   (f) excludeDefaultDirectories = false
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) fast = false
+[DEBUG]   (f) fastMode = background
+[DEBUG]   (f) followSymLinks = false
+[DEBUG]   (f) outputDirectory = /home/project/java-database-capstone/app/target/classes
+[DEBUG]   (f) reportDirectory = /home/project/java-database-capstone/app/target/classes
+[DEBUG]   (f) retryOnError = true
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@6917bb4
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) testOutputDirectory = /home/project/java-database-capstone/app/target/test-classes
+[DEBUG] -- end configuration --
+[INFO] Deleting /home/project/java-database-capstone/app/target
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/application.properties
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/templates/doctor/doctorDashboard.html
+[INFO] Deleting directory /home/project/java-database-capstone/app/target/classes/templates/doctor
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/templates/admin/adminDashboard.html
+[INFO] Deleting directory /home/project/java-database-capstone/app/target/classes/templates/admin
+[INFO] Deleting directory /home/project/java-database-capstone/app/target/classes/templates
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/js/util.js
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/js/appointmentRecord.js
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/js/adminDashboard.js
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/js/updateAppointment.js
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/js/loggedPatient.js
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/js/config/config.js
+[INFO] Deleting directory /home/project/java-database-capstone/app/target/classes/static/js/config
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/js/services/doctorServices.js
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/js/services/index.js
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/js/services/prescriptionServices.js
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/js/services/appointmentRecordService.js
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/js/services/patientServices.js
+[INFO] Deleting directory /home/project/java-database-capstone/app/target/classes/static/js/services
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/js/patientRecordServices.js
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/js/addPrescription.js
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/js/doctorDashboard.js
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/js/patientDashboard.js
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/js/components/appointmentRow.js
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/js/components/modals.js
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/js/components/footer.js
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/js/components/doctorCard.js
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/js/components/header.js
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/js/components/patientRecordRow.js
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/js/components/patientRows.js
+[INFO] Deleting directory /home/project/java-database-capstone/app/target/classes/static/js/components
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/js/patientAppointment.js
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/js/render.js
+[INFO] Deleting directory /home/project/java-database-capstone/app/target/classes/static/js
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/assets/images/addPrescriptionIcon/addPrescription.png
+[INFO] Deleting directory /home/project/java-database-capstone/app/target/classes/static/assets/images/addPrescriptionIcon
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/assets/images/defineRole/index.png
+[INFO] Deleting directory /home/project/java-database-capstone/app/target/classes/static/assets/images/defineRole
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/assets/images/logo/logo.png
+[INFO] Deleting directory /home/project/java-database-capstone/app/target/classes/static/assets/images/logo
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/assets/images/edit/edit.png
+[INFO] Deleting directory /home/project/java-database-capstone/app/target/classes/static/assets/images/edit
+[INFO] Deleting directory /home/project/java-database-capstone/app/target/classes/static/assets/images
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/assets/css/adminDashboard.css
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/assets/css/index.css
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/assets/css/style.css
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/assets/css/addPrescription.css
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/assets/css/updateAppointment.css
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/assets/css/patientDashboard.css
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/assets/css/doctorDashboard.css
+[INFO] Deleting directory /home/project/java-database-capstone/app/target/classes/static/assets/css
+[INFO] Deleting directory /home/project/java-database-capstone/app/target/classes/static/assets
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/index.html
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/pages/addPrescription.html
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/pages/loggedPatientDashboard.html
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/pages/updateAppointment.html
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/pages/patientRecord.html
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/pages/patientDashboard.html
+[INFO] Deleting file /home/project/java-database-capstone/app/target/classes/static/pages/patientAppointments.html
+[INFO] Deleting directory /home/project/java-database-capstone/app/target/classes/static/pages
+[INFO] Deleting directory /home/project/java-database-capstone/app/target/classes/static
+[INFO] Deleting directory /home/project/java-database-capstone/app/target/classes
+[INFO] Deleting directory /home/project/java-database-capstone/app/target/generated-sources/annotations
+[INFO] Deleting directory /home/project/java-database-capstone/app/target/generated-sources
+[INFO] Deleting file /home/project/java-database-capstone/app/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+[INFO] Deleting file /home/project/java-database-capstone/app/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+[INFO] Deleting directory /home/project/java-database-capstone/app/target/maven-status/maven-compiler-plugin/compile/default-compile
+[INFO] Deleting directory /home/project/java-database-capstone/app/target/maven-status/maven-compiler-plugin/compile
+[INFO] Deleting directory /home/project/java-database-capstone/app/target/maven-status/maven-compiler-plugin
+[INFO] Deleting directory /home/project/java-database-capstone/app/target/maven-status
+[INFO] Deleting directory /home/project/java-database-capstone/app/target
+[DEBUG] Skipping non-existing directory /home/project/java-database-capstone/app/target/classes
+[DEBUG] Skipping non-existing directory /home/project/java-database-capstone/app/target/test-classes
+[DEBUG] Skipping non-existing directory /home/project/java-database-capstone/app/target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ back-end ---
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=99735, ConflictMarker.markTime=29715, ConflictMarker.nodeCount=13, ConflictIdSorter.graphTime=19868, ConflictIdSorter.topsortTime=21709, ConflictIdSorter.conflictIdCount=9, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=221854, ConflictResolver.conflictItemCount=13, DfDependencyCollector.collectTime=49480650, DfDependencyCollector.transformTime=427397}
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:3.3.1
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.26:runtime
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.5.1:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:3.3.1:compile
+[DEBUG]       javax.inject:javax.inject:jar:1:compile
+[DEBUG]       org.slf4j:slf4j-api:jar:1.7.36:compile
+[DEBUG]       org.sonatype.plexus:plexus-build-api:jar:0.0.7:compile
+[DEBUG]    commons-io:commons-io:jar:2.11.0:compile
+[DEBUG]    org.apache.commons:commons-lang3:jar:3.12.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.3.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.3.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.3.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:3.3.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.26
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.5.1
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:3.3.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.7
+[DEBUG]   Included: commons-io:commons-io:jar:2.11.0
+[DEBUG]   Included: org.apache.commons:commons-lang3:jar:3.12.0
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-resources-plugin:3.3.1:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:3.3.1, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@639fee48]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-resources-plugin:3.3.1:resources:default-resources' with basic configurator -->
+[DEBUG]   (f) addDefaultExcludes = true
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (s) delimiters = [@]
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (f) fileNameFiltering = false
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /home/project/java-database-capstone/app/target/classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.project:back-end:0.0.1-SNAPSHOT @ /home/project/java-database-capstone/app/pom.xml
+[DEBUG]   (f) propertiesEncoding = UTF-8
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: true, FileSet {directory: /home/project/java-database-capstone/app/src/main/resources, PatternSet [includes: {**/application*.yml, **/application*.yaml, **/application*.properties}, excludes: {}]}}, Resource {targetPath: null, filtering: false, FileSet {directory: /home/project/java-database-capstone/app/src/main/resources, PatternSet [includes: {}, excludes: {**/application*.yml, **/application*.yaml, **/application*.properties}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@6917bb4
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = false
+[DEBUG] -- end configuration --
+[DEBUG] properties used:
+[DEBUG] activemq.version: 6.1.6
+[DEBUG] angus-mail.version: 2.0.3
+[DEBUG] artemis.version: 2.37.0
+[DEBUG] aspectj.version: 1.9.23
+[DEBUG] assertj.version: 3.26.3
+[DEBUG] awaitility.version: 4.2.2
+[DEBUG] brave.version: 6.0.3
+[DEBUG] build-helper-maven-plugin.version: 3.6.0
+[DEBUG] byte-buddy.version: 1.15.11
+[DEBUG] cache2k.version: 2.6.1.Final
+[DEBUG] caffeine.version: 3.1.8
+[DEBUG] cassandra-driver.version: 4.18.1
+[DEBUG] classmate.version: 1.7.0
+[DEBUG] classworlds.conf: /usr/local/apache-maven-3.9.5/bin/m2.conf
+[DEBUG] commons-codec.version: 1.17.2
+[DEBUG] commons-dbcp2.version: 2.12.0
+[DEBUG] commons-lang3.version: 3.17.0
+[DEBUG] commons-pool.version: 1.6
+[DEBUG] commons-pool2.version: 2.12.1
+[DEBUG] couchbase-client.version: 3.7.8
+[DEBUG] crac.version: 1.5.0
+[DEBUG] cyclonedx-maven-plugin.version: 2.9.1
+[DEBUG] db2-jdbc.version: 11.5.9.0
+[DEBUG] dependency-management-plugin.version: 1.1.7
+[DEBUG] derby.version: 10.16.1.1
+[DEBUG] ehcache3.version: 3.10.8
+[DEBUG] elasticsearch-client.version: 8.15.5
+[DEBUG] env.AIRFLOW_PASSWORD: MTEyNTUta295YWxr
+[DEBUG] env.ANONYMIZED_TELEMETRY: False
+[DEBUG] env.ANTHROPIC_API_KEY: skills-network
+[DEBUG] env.CARGO_HOME: /usr/local/cargo
+[DEBUG] env.CASSANDRA_PASSWORD: MTU2MDQta295YWxr
+[DEBUG] env.CLASSPATH: /home/theia/dsdriver/tools/clpplus.jar:/home/theia/dsdriver/tools/jline-0.9.93.jar:/home/theia/dsdriver/tools/antlr-3.3-java.jar:/home/theia/dsdriver/java/db2jcc4.jar:/home/theia/dsdriver/java/sqlj4.zip:
+[DEBUG] env.DEBIAN_FRONTEND: noninteractive
+[DEBUG] env.DOCKER_CERT_PATH: /certs/client
+[DEBUG] env.DOCKER_HOST: tcp://docker:2376
+[DEBUG] env.DOCKER_MACHINE_NAME: theia
+[DEBUG] env.DOCKER_TLS_VERIFY: 1
+[DEBUG] env.DOTNET_BUNDLE_EXTRACT_BASE_DIR: /home/theia/.cache/dotnet_bundle_extract
+[DEBUG] env.DOTNET_CLI_TELEMETRY_OPTOUT: 1
+[DEBUG] env.DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
+[DEBUG] env.GIT_EXEC_PATH: /usr/lib/git-core
+[DEBUG] env.GIT__CAN_USE_NO_OPTIONAL_LOCKS: true
+[DEBUG] env.GOARCH: amd64
+[DEBUG] env.GOOS: linux
+[DEBUG] env.GOPATH: /usr/local/go-packages
+[DEBUG] env.GOROOT: /usr/local/go
+[DEBUG] env.GO_VERSION: 1.21.1
+[DEBUG] env.HOME: /home/theia
+[DEBUG] env.HOSTNAME: theiadocker-koyalkarmani
+[DEBUG] env.HUB_PORT: tcp://172.21.186.77:8081
+[DEBUG] env.HUB_PORT_8081_TCP: tcp://172.21.186.77:8081
+[DEBUG] env.HUB_PORT_8081_TCP_ADDR: 172.21.186.77
+[DEBUG] env.HUB_PORT_8081_TCP_PORT: 8081
+[DEBUG] env.HUB_PORT_8081_TCP_PROTO: tcp
+[DEBUG] env.HUB_SERVICE_HOST: 172.21.186.77
+[DEBUG] env.HUB_SERVICE_PORT: 8081
+[DEBUG] env.HUB_SERVICE_PORT_HUB: 8081
+[DEBUG] env.IBMCLOUD_API_KEY: fr6eAQzcqJt98PlXAO_GlBrnCldey1qv2kU8m7qTZSuc
+[DEBUG] env.IBMCLOUD_API_KEY_LOCATION: /etc/sn/.ibmcloud_apikey
+[DEBUG] env.IBM_CLOUD_API_KEY: skills-network.eyJleHAiOjB9Cg==
+[DEBUG] env.IBM_DB_HOME: /home/theia/dsdriver/
+[DEBUG] env.JAVA_HOME: /usr/lib/jvm/jdk-21.0.6-oracle-x64
+[DEBUG] env.JUPYTERHUB_THEIADOCKERNEXT_0_UARP_PORT: tcp://172.21.158.92:3000
+[DEBUG] env.JUPYTERHUB_THEIADOCKERNEXT_0_UARP_PORT_3000_TCP: tcp://172.21.158.92:3000
+[DEBUG] env.JUPYTERHUB_THEIADOCKERNEXT_0_UARP_PORT_3000_TCP_ADDR: 172.21.158.92
+[DEBUG] env.JUPYTERHUB_THEIADOCKERNEXT_0_UARP_PORT_3000_TCP_PORT: 3000
+[DEBUG] env.JUPYTERHUB_THEIADOCKERNEXT_0_UARP_PORT_3000_TCP_PROTO: tcp
+[DEBUG] env.JUPYTERHUB_THEIADOCKERNEXT_0_UARP_SERVICE_HOST: 172.21.158.92
+[DEBUG] env.JUPYTERHUB_THEIADOCKERNEXT_0_UARP_SERVICE_PORT: 3000
+[DEBUG] env.JUPYTERHUB_THEIADOCKERNEXT_0_UARP_SERVICE_PORT_HTTP: 3000
+[DEBUG] env.KUBECONFIG: /etc/kube/config
+[DEBUG] env.KUBERNETES_PORT: tcp://172.21.0.1:443
+[DEBUG] env.KUBERNETES_PORT_443_TCP: tcp://172.21.0.1:443
+[DEBUG] env.KUBERNETES_PORT_443_TCP_ADDR: 172.21.0.1
+[DEBUG] env.KUBERNETES_PORT_443_TCP_PORT: 443
+[DEBUG] env.KUBERNETES_PORT_443_TCP_PROTO: tcp
+[DEBUG] env.KUBERNETES_SERVICE_HOST: 172.21.0.1
+[DEBUG] env.KUBERNETES_SERVICE_PORT: 443
+[DEBUG] env.KUBERNETES_SERVICE_PORT_HTTPS: 443
+[DEBUG] env.LD_LIBRARY_PATH: /home/theia/dsdriver/lib
+[DEBUG] env.LESSCLOSE: /usr/bin/lesspipe %s %s
+[DEBUG] env.LESSOPEN: | /usr/bin/lesspipe %s
+[DEBUG] env.LOCAL_GIT_DIRECTORY: /usr
+[DEBUG] env.LS_COLORS: rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+[DEBUG] env.MAVEN_CMD_LINE_ARGS:  clean install -X
+[DEBUG] env.MAVEN_PROJECTBASEDIR: /home/project/java-database-capstone/app
+[DEBUG] env.MONGO_PASSWORD: MjU0MjMta295YWxr
+[DEBUG] env.NODE_EXTRA_CA_CERTS: /etc/ssl/certs/ca-certificates.crt
+[DEBUG] env.OLDPWD: /home/project/java-database-capstone/app
+[DEBUG] env.OPENAI_API_KEY: skills-network
+[DEBUG] env.PATH: /home/theia/.rbenv/shims:/home/theia/.rbenv/bin:/home/theia/.rbenv/shims:/home/theia/.rbenv/bin:/etc/flutter/flutter/bin:/home/theia/dsdriver/adm:/home/theia/dsdriver/bin:/usr/local/cargo/bin:/usr/local/go/bin:/usr/local/go-packages/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/go-packages/bin:/usr/local/apache-maven-3.9.5/bin:/home/theia/.local/bin:/home/theia/.dotnet/tools
+[DEBUG] env.PGPASSWORD: Nzk0OS1rb3lhbGth
+[DEBUG] env.POSTGRES_PASSWORD: Nzk0OS1rb3lhbGth
+[DEBUG] env.PRELAUNCH_K8S: true
+[DEBUG] env.PROXY_API_PORT: tcp://172.21.51.32:8001
+[DEBUG] env.PROXY_API_PORT_8001_TCP: tcp://172.21.51.32:8001
+[DEBUG] env.PROXY_API_PORT_8001_TCP_ADDR: 172.21.51.32
+[DEBUG] env.PROXY_API_PORT_8001_TCP_PORT: 8001
+[DEBUG] env.PROXY_API_PORT_8001_TCP_PROTO: tcp
+[DEBUG] env.PROXY_API_SERVICE_HOST: 172.21.51.32
+[DEBUG] env.PROXY_API_SERVICE_PORT: 8001
+[DEBUG] env.PROXY_DOMAIN: theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai
+[DEBUG] env.PROXY_PUBLIC_PORT: tcp://172.21.110.91:80
+[DEBUG] env.PROXY_PUBLIC_PORT_80_TCP: tcp://172.21.110.91:80
+[DEBUG] env.PROXY_PUBLIC_PORT_80_TCP_ADDR: 172.21.110.91
+[DEBUG] env.PROXY_PUBLIC_PORT_80_TCP_PORT: 80
+[DEBUG] env.PROXY_PUBLIC_PORT_80_TCP_PROTO: tcp
+[DEBUG] env.PROXY_PUBLIC_SERVICE_HOST: 172.21.110.91
+[DEBUG] env.PROXY_PUBLIC_SERVICE_PORT: 80
+[DEBUG] env.PROXY_PUBLIC_SERVICE_PORT_HTTP: 80
+[DEBUG] env.PUKE_BASE_URL: https://private-puke.labs.skills.network
+[DEBUG] env.PUKE_TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtveWFsa2FybWFuaSIsImlhdCI6MTc1Mjg0NTk5OSwiZXhwIjoxNzUyOTMyMzk5fQ.B8BoKDnAa1kORxO3oF3ir5bDYnOCQ3YrCj_mTivzNFM
+[DEBUG] env.PWD: /home/project/java-database-capstone/app
+[DEBUG] env.RBENV_SHELL: bash
+[DEBUG] env.REQUESTS_CA_BUNDLE: /etc/ssl/certs/ca-certificates.crt
+[DEBUG] env.RUSTUP_HOME: /usr/local/rustup
+[DEBUG] env.SHELL: /bin/bash
+[DEBUG] env.SHLVL: 2
+[DEBUG] env.SN_ICR_NAMESPACE: sn-labs-koyalkarmani
+[DEBUG] env.SN_KUBECTL_CONTEXT: koyalkarmani-context
+[DEBUG] env.SSL_CERT_FILE: /etc/ssl/certs/ca-certificates.crt
+[DEBUG] env.TERM: xterm-color
+[DEBUG] env.THEIA_APP_PROJECT_PATH: /home/theia/applications/browser
+[DEBUG] env.THEIA_CONFIG_DIR: /home/theia/.theia
+[DEBUG] env.THEIA_DEFAULT_PLUGINS: local-dir:/home/theia/applications/browser/plugins
+[DEBUG] env.THEIA_LOCAL_PORT: 5309
+[DEBUG] env.TOOL_DOMAIN: theiadockernext-0-labs-prod-theiak8s-4-tor01.labs.cognitiveclass.ai
+[DEBUG] env.USERNAME: koyalkarmani
+[DEBUG] env.USER_ACCESS_TOKEN: skills-network.eyJleHAiOjB9Cg==
+[DEBUG] env.USER_NATS_TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJvcmdhbml6YXRpb24iOiJzbiIsInByb2dyYW0iOiJsYWJzIiwicHJvamVjdCI6bnVsbCwib3B0aW9ucyI6eyJwZXJtaXR0ZWRBY3Rpb25zIjpbIm15c3FsLnN0YXJ0IiwibW9uZ28uc3RhcnQiLCJwb3N0Z3Jlcy5zdGFydCIsImNhc3NhbmRyYS5zdGFydCIsImFpcmZsb3cuc3RhcnQiLCJteXNxbC5zdG9wIiwibW9uZ28uc3RvcCIsInBvc3RncmVzLnN0b3AiLCJjYXNzYW5kcmEuc3RvcCIsImFpcmZsb3cuc3RvcCIsImVycm9yIl0sInBlcm1pdHRlZFR5cGUiOiJ1c2VyIiwicGVybWl0dGVkVXNlcm5hbWUiOiJrb3lhbGthcm1hbmkifSwiaWF0IjoxNzUyODQ1OTk5fQ.QdKhFdBy319zfLbh3EOLxw9nKEK3yoyJ9VyUEMvh4tw
+[DEBUG] env.USE_LOCAL_GIT: true
+[DEBUG] env.VSCODE_API_VERSION: 1.89.1
+[DEBUG] env.WATSONX_AI_AUTH_TYPE: bearertoken
+[DEBUG] env.WATSONX_AI_BEARER_TOKEN: skills-network.eyJleHAiOjB9Cg==
+[DEBUG] env.WATSONX_APIKEY: skills-network.eyJleHAiOjB9Cg==
+[DEBUG] env.WATSONX_API_KEY: skills-network.eyJleHAiOjB9Cg==
+[DEBUG] env.WATSONX_PROJECT_ID: skills-network
+[DEBUG] env.WATSONX_TOKEN: skills-network.eyJleHAiOjB9Cg==
+[DEBUG] env._: /usr/local/apache-maven-3.9.5/bin/mvn
+[DEBUG] env._AIRFLOW_WWW_USER_PASSWORD: MTEyNTUta295YWxr
+[DEBUG] file.encoding: UTF-8
+[DEBUG] file.separator: /
+[DEBUG] flyway.version: 10.20.1
+[DEBUG] freemarker.version: 2.3.34
+[DEBUG] git-commit-id-maven-plugin.version: 9.0.1
+[DEBUG] glassfish-jaxb.version: 4.0.5
+[DEBUG] glassfish-jstl.version: 3.0.1
+[DEBUG] graphql-java.version: 22.3
+[DEBUG] groovy.version: 4.0.26
+[DEBUG] gson.version: 2.11.0
+[DEBUG] h2.version: 2.3.232
+[DEBUG] hamcrest.version: 2.2
+[DEBUG] hazelcast.version: 5.5.0
+[DEBUG] hibernate-validator.version: 8.0.2.Final
+[DEBUG] hibernate.version: 6.6.11.Final
+[DEBUG] hikaricp.version: 5.1.0
+[DEBUG] hsqldb.version: 2.7.3
+[DEBUG] htmlunit.version: 4.5.0
+[DEBUG] httpasyncclient.version: 4.1.5
+[DEBUG] httpclient5.version: 5.4.2
+[DEBUG] httpcore.version: 4.4.16
+[DEBUG] httpcore5.version: 5.3.3
+[DEBUG] infinispan.version: 15.0.14.Final
+[DEBUG] influxdb-java.version: 2.24
+[DEBUG] jackson-bom.version: 2.18.3
+[DEBUG] jakarta-activation.version: 2.1.3
+[DEBUG] jakarta-annotation.version: 2.1.1
+[DEBUG] jakarta-inject.version: 2.0.1
+[DEBUG] jakarta-jms.version: 3.1.0
+[DEBUG] jakarta-json-bind.version: 3.0.1
+[DEBUG] jakarta-json.version: 2.1.3
+[DEBUG] jakarta-mail.version: 2.1.3
+[DEBUG] jakarta-management.version: 1.1.4
+[DEBUG] jakarta-persistence.version: 3.1.0
+[DEBUG] jakarta-servlet-jsp-jstl.version: 3.0.2
+[DEBUG] jakarta-servlet.version: 6.0.0
+[DEBUG] jakarta-transaction.version: 2.0.1
+[DEBUG] jakarta-validation.version: 3.0.2
+[DEBUG] jakarta-websocket.version: 2.1.1
+[DEBUG] jakarta-ws-rs.version: 3.1.0
+[DEBUG] jakarta-xml-bind.version: 4.0.2
+[DEBUG] jakarta-xml-soap.version: 3.0.2
+[DEBUG] jakarta-xml-ws.version: 4.0.2
+[DEBUG] janino.version: 3.1.12
+[DEBUG] java.class.path: /usr/local/apache-maven-3.9.5/boot/plexus-classworlds-2.7.0.jar
+[DEBUG] java.class.version: 65.0
+[DEBUG] java.home: /usr/lib/jvm/jdk-21.0.6-oracle-x64
+[DEBUG] java.io.tmpdir: /tmp
+[DEBUG] java.library.path: /home/theia/dsdriver/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib
+[DEBUG] java.runtime.name: Java(TM) SE Runtime Environment
+[DEBUG] java.runtime.version: 21.0.6+8-LTS-188
+[DEBUG] java.specification.name: Java Platform API Specification
+[DEBUG] java.specification.vendor: Oracle Corporation
+[DEBUG] java.specification.version: 21
+[DEBUG] java.vendor: Oracle Corporation
+[DEBUG] java.vendor.url: https://java.oracle.com/
+[DEBUG] java.vendor.url.bug: https://bugreport.java.com/bugreport/
+[DEBUG] java.version: 21.0.6
+[DEBUG] java.version.date: 2025-01-21
+[DEBUG] java.vm.compressedOopsMode: 32-bit
+[DEBUG] java.vm.info: mixed mode, sharing
+[DEBUG] java.vm.name: Java HotSpot(TM) 64-Bit Server VM
+[DEBUG] java.vm.specification.name: Java Virtual Machine Specification
+[DEBUG] java.vm.specification.vendor: Oracle Corporation
+[DEBUG] java.vm.specification.version: 21
+[DEBUG] java.vm.vendor: Oracle Corporation
+[DEBUG] java.vm.version: 21.0.6+8-LTS-188
+[DEBUG] javax-cache.version: 1.1.1
+[DEBUG] javax-money.version: 1.1
+[DEBUG] jaxen.version: 2.0.0
+[DEBUG] jaybird.version: 5.0.6.java11
+[DEBUG] jboss-logging.version: 3.6.1.Final
+[DEBUG] jdk.debug: release
+[DEBUG] jdom2.version: 2.0.6.1
+[DEBUG] jedis.version: 5.2.0
+[DEBUG] jersey.version: 3.1.10
+[DEBUG] jetty-reactive-httpclient.version: 4.0.9
+[DEBUG] jetty.version: 12.0.18
+[DEBUG] jmustache.version: 1.16
+[DEBUG] jooq.version: 3.19.21
+[DEBUG] json-path.version: 2.9.0
+[DEBUG] json-smart.version: 2.5.2
+[DEBUG] jsonassert.version: 1.5.3
+[DEBUG] jtds.version: 1.3.1
+[DEBUG] junit-jupiter.version: 5.11.4
+[DEBUG] junit.version: 4.13.2
+[DEBUG] kafka.version: 3.8.1
+[DEBUG] kotlin-coroutines.version: 1.8.1
+[DEBUG] kotlin-serialization.version: 1.6.3
+[DEBUG] kotlin.version: 1.9.25
+[DEBUG] lettuce.version: 6.4.2.RELEASE
+[DEBUG] library.jansi.path: /usr/local/apache-maven-3.9.5/lib/jansi-native
+[DEBUG] line.separator: 
+
+[DEBUG] liquibase.version: 4.29.2
+[DEBUG] log4j2.version: 2.24.3
+[DEBUG] logback.version: 1.5.18
+[DEBUG] lombok.version: 1.18.36
+[DEBUG] mariadb.version: 3.4.1
+[DEBUG] maven-antrun-plugin.version: 3.1.0
+[DEBUG] maven-assembly-plugin.version: 3.7.1
+[DEBUG] maven-clean-plugin.version: 3.4.1
+[DEBUG] maven-compiler-plugin.version: 3.13.0
+[DEBUG] maven-dependency-plugin.version: 3.8.1
+[DEBUG] maven-deploy-plugin.version: 3.1.4
+[DEBUG] maven-enforcer-plugin.version: 3.5.0
+[DEBUG] maven-failsafe-plugin.version: 3.5.2
+[DEBUG] maven-help-plugin.version: 3.5.1
+[DEBUG] maven-install-plugin.version: 3.1.4
+[DEBUG] maven-invoker-plugin.version: 3.8.1
+[DEBUG] maven-jar-plugin.version: 3.4.2
+[DEBUG] maven-javadoc-plugin.version: 3.10.1
+[DEBUG] maven-resources-plugin.version: 3.3.1
+[DEBUG] maven-shade-plugin.version: 3.6.0
+[DEBUG] maven-source-plugin.version: 3.3.1
+[DEBUG] maven-surefire-plugin.version: 3.5.2
+[DEBUG] maven-war-plugin.version: 3.4.0
+[DEBUG] maven.build.timestamp: 2025-07-18T14:35:37Z
+[DEBUG] maven.build.version: Apache Maven 3.9.5 (57804ffe001d7215b5e7bcb531cf83df38f93546)
+[DEBUG] maven.compiler.release: 17
+[DEBUG] maven.conf: /usr/local/apache-maven-3.9.5/conf
+[DEBUG] maven.home: /usr/local/apache-maven-3.9.5
+[DEBUG] maven.multiModuleProjectDirectory: /home/project/java-database-capstone/app
+[DEBUG] maven.version: 3.9.5
+[DEBUG] micrometer-tracing.version: 1.4.4
+[DEBUG] micrometer.version: 1.14.5
+[DEBUG] mockito.version: 5.14.2
+[DEBUG] mongodb.version: 5.2.1
+[DEBUG] mssql-jdbc.version: 12.8.1.jre11
+[DEBUG] mysql.version: 9.1.0
+[DEBUG] native-build-tools-plugin.version: 0.10.6
+[DEBUG] native.encoding: ANSI_X3.4-1968
+[DEBUG] nekohtml.version: 1.9.22
+[DEBUG] neo4j-java-driver.version: 5.28.3
+[DEBUG] netty.version: 4.1.119.Final
+[DEBUG] opentelemetry.version: 1.43.0
+[DEBUG] oracle-database.version: 23.5.0.24.07
+[DEBUG] oracle-r2dbc.version: 1.2.0
+[DEBUG] os.arch: amd64
+[DEBUG] os.name: Linux
+[DEBUG] os.version: 6.8.0-63-generic
+[DEBUG] path.separator: :
+[DEBUG] pooled-jms.version: 3.1.7
+[DEBUG] postgresql.version: 42.7.5
+[DEBUG] project.baseUri: file:/home/project/java-database-capstone/app/
+[DEBUG] project.build.sourceEncoding: UTF-8
+[DEBUG] project.reporting.outputEncoding: UTF-8
+[DEBUG] prometheus-client.version: 1.3.6
+[DEBUG] prometheus-simpleclient.version: 0.16.0
+[DEBUG] pulsar-reactive.version: 0.5.10
+[DEBUG] pulsar.version: 3.3.5
+[DEBUG] quartz.version: 2.3.2
+[DEBUG] querydsl.version: 5.1.0
+[DEBUG] r2dbc-h2.version: 1.0.0.RELEASE
+[DEBUG] r2dbc-mariadb.version: 1.2.2
+[DEBUG] r2dbc-mssql.version: 1.0.2.RELEASE
+[DEBUG] r2dbc-mysql.version: 1.3.2
+[DEBUG] r2dbc-pool.version: 1.0.2.RELEASE
+[DEBUG] r2dbc-postgresql.version: 1.0.7.RELEASE
+[DEBUG] r2dbc-proxy.version: 1.1.5.RELEASE
+[DEBUG] r2dbc-spi.version: 1.0.0.RELEASE
+[DEBUG] rabbit-amqp-client.version: 5.22.0
+[DEBUG] rabbit-stream-client.version: 0.18.0
+[DEBUG] reactive-streams.version: 1.0.4
+[DEBUG] reactor-bom.version: 2024.0.4
+[DEBUG] resource.delimiter: @
+[DEBUG] rest-assured.version: 5.5.1
+[DEBUG] rsocket.version: 1.1.5
+[DEBUG] rxjava3.version: 3.1.10
+[DEBUG] saaj-impl.version: 3.0.4
+[DEBUG] selenium-htmlunit.version: 4.25.0
+[DEBUG] selenium.version: 4.25.0
+[DEBUG] sendgrid.version: 4.10.3
+[DEBUG] slf4j.version: 2.0.17
+[DEBUG] snakeyaml.version: 2.3
+[DEBUG] spring-amqp.version: 3.2.4
+[DEBUG] spring-authorization-server.version: 1.4.2
+[DEBUG] spring-batch.version: 5.2.2
+[DEBUG] spring-boot.run.main-class: ${start-class}
+[DEBUG] spring-data-bom.version: 2024.1.4
+[DEBUG] spring-framework.version: 6.2.5
+[DEBUG] spring-graphql.version: 1.3.4
+[DEBUG] spring-hateoas.version: 2.4.1
+[DEBUG] spring-integration.version: 6.4.3
+[DEBUG] spring-kafka.version: 3.3.4
+[DEBUG] spring-ldap.version: 3.2.11
+[DEBUG] spring-pulsar.version: 1.2.4
+[DEBUG] spring-restdocs.version: 3.0.3
+[DEBUG] spring-retry.version: 2.0.11
+[DEBUG] spring-security.version: 6.4.4
+[DEBUG] spring-session.version: 3.4.2
+[DEBUG] spring-ws.version: 4.0.12
+[DEBUG] sqlite-jdbc.version: 3.47.2.0
+[DEBUG] stderr.encoding: ANSI_X3.4-1968
+[DEBUG] stdout.encoding: ANSI_X3.4-1968
+[DEBUG] sun.arch.data.model: 64
+[DEBUG] sun.boot.library.path: /usr/lib/jvm/jdk-21.0.6-oracle-x64/lib
+[DEBUG] sun.cpu.endian: little
+[DEBUG] sun.io.unicode.encoding: UnicodeLittle
+[DEBUG] sun.java.command: org.codehaus.plexus.classworlds.launcher.Launcher clean install -X
+[DEBUG] sun.java.launcher: SUN_STANDARD
+[DEBUG] sun.jnu.encoding: ANSI_X3.4-1968
+[DEBUG] sun.management.compiler: HotSpot 64-Bit Tiered Compilers
+[DEBUG] testcontainers-redis-module.version: 2.2.4
+[DEBUG] testcontainers.version: 1.20.6
+[DEBUG] thymeleaf-extras-data-attribute.version: 2.0.1
+[DEBUG] thymeleaf-extras-springsecurity.version: 3.1.3.RELEASE
+[DEBUG] thymeleaf-layout-dialect.version: 3.3.0
+[DEBUG] thymeleaf.version: 3.1.3.RELEASE
+[DEBUG] tomcat.version: 10.1.39
+[DEBUG] unboundid-ldapsdk.version: 6.0.11
+[DEBUG] undertow.version: 2.3.18.Final
+[DEBUG] user.country: US
+[DEBUG] user.dir: /home/project/java-database-capstone/app
+[DEBUG] user.home: /home/theia
+[DEBUG] user.language: en
+[DEBUG] user.name: theia
+[DEBUG] versions-maven-plugin.version: 2.17.1
+[DEBUG] webjars-locator-core.version: 0.59
+[DEBUG] webjars-locator-lite.version: 1.0.1
+[DEBUG] wsdl4j.version: 1.6.3
+[DEBUG] xml-maven-plugin.version: 1.1.0
+[DEBUG] xmlunit2.version: 2.10.0
+[DEBUG] yasson.version: 3.0.4
+[DEBUG] zipkin-reporter.version: 3.4.3
+[DEBUG] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] Using 'UTF-8' encoding to copy filtered properties files.
+[DEBUG] resource with targetPath null
+directory /home/project/java-database-capstone/app/src/main/resources
+excludes []
+includes [**/application*.yml, **/application*.yaml, **/application*.properties]
+[DEBUG] ignoreDelta true
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[DEBUG] Copying file application.properties
+[DEBUG] file application.properties has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'application.properties'.
+[DEBUG] filtering /home/project/java-database-capstone/app/src/main/resources/application.properties to /home/project/java-database-capstone/app/target/classes/application.properties
+[DEBUG] resource with targetPath null
+directory /home/project/java-database-capstone/app/src/main/resources
+excludes [**/application*.yml, **/application*.yaml, **/application*.properties]
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 44 resources from src/main/resources to target/classes
+[DEBUG] Copying file templates/doctor/doctorDashboard.html
+[DEBUG] file doctorDashboard.html has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'doctorDashboard.html'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/templates/doctor/doctorDashboard.html to /home/project/java-database-capstone/app/target/classes/templates/doctor/doctorDashboard.html
+[DEBUG] Copying file templates/admin/adminDashboard.html
+[DEBUG] file adminDashboard.html has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'adminDashboard.html'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/templates/admin/adminDashboard.html to /home/project/java-database-capstone/app/target/classes/templates/admin/adminDashboard.html
+[DEBUG] Copying file static/js/util.js
+[DEBUG] file util.js has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'util.js'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/js/util.js to /home/project/java-database-capstone/app/target/classes/static/js/util.js
+[DEBUG] Copying file static/js/appointmentRecord.js
+[DEBUG] file appointmentRecord.js has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'appointmentRecord.js'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/js/appointmentRecord.js to /home/project/java-database-capstone/app/target/classes/static/js/appointmentRecord.js
+[DEBUG] Copying file static/js/adminDashboard.js
+[DEBUG] file adminDashboard.js has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'adminDashboard.js'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/js/adminDashboard.js to /home/project/java-database-capstone/app/target/classes/static/js/adminDashboard.js
+[DEBUG] Copying file static/js/updateAppointment.js
+[DEBUG] file updateAppointment.js has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'updateAppointment.js'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/js/updateAppointment.js to /home/project/java-database-capstone/app/target/classes/static/js/updateAppointment.js
+[DEBUG] Copying file static/js/loggedPatient.js
+[DEBUG] file loggedPatient.js has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'loggedPatient.js'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/js/loggedPatient.js to /home/project/java-database-capstone/app/target/classes/static/js/loggedPatient.js
+[DEBUG] Copying file static/js/config/config.js
+[DEBUG] file config.js has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'config.js'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/js/config/config.js to /home/project/java-database-capstone/app/target/classes/static/js/config/config.js
+[DEBUG] Copying file static/js/services/doctorServices.js
+[DEBUG] file doctorServices.js has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'doctorServices.js'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/js/services/doctorServices.js to /home/project/java-database-capstone/app/target/classes/static/js/services/doctorServices.js
+[DEBUG] Copying file static/js/services/index.js
+[DEBUG] file index.js has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'index.js'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/js/services/index.js to /home/project/java-database-capstone/app/target/classes/static/js/services/index.js
+[DEBUG] Copying file static/js/services/prescriptionServices.js
+[DEBUG] file prescriptionServices.js has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'prescriptionServices.js'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/js/services/prescriptionServices.js to /home/project/java-database-capstone/app/target/classes/static/js/services/prescriptionServices.js
+[DEBUG] Copying file static/js/services/appointmentRecordService.js
+[DEBUG] file appointmentRecordService.js has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'appointmentRecordService.js'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/js/services/appointmentRecordService.js to /home/project/java-database-capstone/app/target/classes/static/js/services/appointmentRecordService.js
+[DEBUG] Copying file static/js/services/patientServices.js
+[DEBUG] file patientServices.js has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'patientServices.js'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/js/services/patientServices.js to /home/project/java-database-capstone/app/target/classes/static/js/services/patientServices.js
+[DEBUG] Copying file static/js/patientRecordServices.js
+[DEBUG] file patientRecordServices.js has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'patientRecordServices.js'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/js/patientRecordServices.js to /home/project/java-database-capstone/app/target/classes/static/js/patientRecordServices.js
+[DEBUG] Copying file static/js/addPrescription.js
+[DEBUG] file addPrescription.js has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'addPrescription.js'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/js/addPrescription.js to /home/project/java-database-capstone/app/target/classes/static/js/addPrescription.js
+[DEBUG] Copying file static/js/doctorDashboard.js
+[DEBUG] file doctorDashboard.js has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'doctorDashboard.js'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/js/doctorDashboard.js to /home/project/java-database-capstone/app/target/classes/static/js/doctorDashboard.js
+[DEBUG] Copying file static/js/patientDashboard.js
+[DEBUG] file patientDashboard.js has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'patientDashboard.js'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/js/patientDashboard.js to /home/project/java-database-capstone/app/target/classes/static/js/patientDashboard.js
+[DEBUG] Copying file static/js/components/appointmentRow.js
+[DEBUG] file appointmentRow.js has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'appointmentRow.js'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/js/components/appointmentRow.js to /home/project/java-database-capstone/app/target/classes/static/js/components/appointmentRow.js
+[DEBUG] Copying file static/js/components/modals.js
+[DEBUG] file modals.js has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'modals.js'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/js/components/modals.js to /home/project/java-database-capstone/app/target/classes/static/js/components/modals.js
+[DEBUG] Copying file static/js/components/footer.js
+[DEBUG] file footer.js has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'footer.js'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/js/components/footer.js to /home/project/java-database-capstone/app/target/classes/static/js/components/footer.js
+[DEBUG] Copying file static/js/components/doctorCard.js
+[DEBUG] file doctorCard.js has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'doctorCard.js'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/js/components/doctorCard.js to /home/project/java-database-capstone/app/target/classes/static/js/components/doctorCard.js
+[DEBUG] Copying file static/js/components/header.js
+[DEBUG] file header.js has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'header.js'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/js/components/header.js to /home/project/java-database-capstone/app/target/classes/static/js/components/header.js
+[DEBUG] Copying file static/js/components/patientRecordRow.js
+[DEBUG] file patientRecordRow.js has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'patientRecordRow.js'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/js/components/patientRecordRow.js to /home/project/java-database-capstone/app/target/classes/static/js/components/patientRecordRow.js
+[DEBUG] Copying file static/js/components/patientRows.js
+[DEBUG] file patientRows.js has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'patientRows.js'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/js/components/patientRows.js to /home/project/java-database-capstone/app/target/classes/static/js/components/patientRows.js
+[DEBUG] Copying file static/js/patientAppointment.js
+[DEBUG] file patientAppointment.js has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'patientAppointment.js'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/js/patientAppointment.js to /home/project/java-database-capstone/app/target/classes/static/js/patientAppointment.js
+[DEBUG] Copying file static/js/render.js
+[DEBUG] file render.js has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'render.js'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/js/render.js to /home/project/java-database-capstone/app/target/classes/static/js/render.js
+[DEBUG] Copying file static/assets/images/addPrescriptionIcon/addPrescription.png
+[DEBUG] file addPrescription.png has a non filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'addPrescription.png'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/assets/images/addPrescriptionIcon/addPrescription.png to /home/project/java-database-capstone/app/target/classes/static/assets/images/addPrescriptionIcon/addPrescription.png
+[DEBUG] Copying file static/assets/images/defineRole/index.png
+[DEBUG] file index.png has a non filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'index.png'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/assets/images/defineRole/index.png to /home/project/java-database-capstone/app/target/classes/static/assets/images/defineRole/index.png
+[DEBUG] Copying file static/assets/images/logo/logo.png
+[DEBUG] file logo.png has a non filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'logo.png'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/assets/images/logo/logo.png to /home/project/java-database-capstone/app/target/classes/static/assets/images/logo/logo.png
+[DEBUG] Copying file static/assets/images/edit/edit.png
+[DEBUG] file edit.png has a non filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'edit.png'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/assets/images/edit/edit.png to /home/project/java-database-capstone/app/target/classes/static/assets/images/edit/edit.png
+[DEBUG] Copying file static/assets/css/adminDashboard.css
+[DEBUG] file adminDashboard.css has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'adminDashboard.css'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/assets/css/adminDashboard.css to /home/project/java-database-capstone/app/target/classes/static/assets/css/adminDashboard.css
+[DEBUG] Copying file static/assets/css/index.css
+[DEBUG] file index.css has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'index.css'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/assets/css/index.css to /home/project/java-database-capstone/app/target/classes/static/assets/css/index.css
+[DEBUG] Copying file static/assets/css/style.css
+[DEBUG] file style.css has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'style.css'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/assets/css/style.css to /home/project/java-database-capstone/app/target/classes/static/assets/css/style.css
+[DEBUG] Copying file static/assets/css/addPrescription.css
+[DEBUG] file addPrescription.css has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'addPrescription.css'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/assets/css/addPrescription.css to /home/project/java-database-capstone/app/target/classes/static/assets/css/addPrescription.css
+[DEBUG] Copying file static/assets/css/updateAppointment.css
+[DEBUG] file updateAppointment.css has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'updateAppointment.css'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/assets/css/updateAppointment.css to /home/project/java-database-capstone/app/target/classes/static/assets/css/updateAppointment.css
+[DEBUG] Copying file static/assets/css/patientDashboard.css
+[DEBUG] file patientDashboard.css has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'patientDashboard.css'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/assets/css/patientDashboard.css to /home/project/java-database-capstone/app/target/classes/static/assets/css/patientDashboard.css
+[DEBUG] Copying file static/assets/css/doctorDashboard.css
+[DEBUG] file doctorDashboard.css has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'doctorDashboard.css'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/assets/css/doctorDashboard.css to /home/project/java-database-capstone/app/target/classes/static/assets/css/doctorDashboard.css
+[DEBUG] Copying file static/index.html
+[DEBUG] file index.html has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'index.html'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/index.html to /home/project/java-database-capstone/app/target/classes/static/index.html
+[DEBUG] Copying file static/pages/addPrescription.html
+[DEBUG] file addPrescription.html has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'addPrescription.html'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/pages/addPrescription.html to /home/project/java-database-capstone/app/target/classes/static/pages/addPrescription.html
+[DEBUG] Copying file static/pages/loggedPatientDashboard.html
+[DEBUG] file loggedPatientDashboard.html has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'loggedPatientDashboard.html'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/pages/loggedPatientDashboard.html to /home/project/java-database-capstone/app/target/classes/static/pages/loggedPatientDashboard.html
+[DEBUG] Copying file static/pages/updateAppointment.html
+[DEBUG] file updateAppointment.html has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'updateAppointment.html'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/pages/updateAppointment.html to /home/project/java-database-capstone/app/target/classes/static/pages/updateAppointment.html
+[DEBUG] Copying file static/pages/patientRecord.html
+[DEBUG] file patientRecord.html has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'patientRecord.html'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/pages/patientRecord.html to /home/project/java-database-capstone/app/target/classes/static/pages/patientRecord.html
+[DEBUG] Copying file static/pages/patientDashboard.html
+[DEBUG] file patientDashboard.html has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'patientDashboard.html'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/pages/patientDashboard.html to /home/project/java-database-capstone/app/target/classes/static/pages/patientDashboard.html
+[DEBUG] Copying file static/pages/patientAppointments.html
+[DEBUG] file patientAppointments.html has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'patientAppointments.html'.
+[DEBUG] copy /home/project/java-database-capstone/app/src/main/resources/static/pages/patientAppointments.html to /home/project/java-database-capstone/app/target/classes/static/pages/patientAppointments.html
+[DEBUG] no user filter components
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ back-end ---
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=141007, ConflictMarker.markTime=43262, ConflictMarker.nodeCount=22, ConflictIdSorter.graphTime=35847, ConflictIdSorter.topsortTime=31225, ConflictIdSorter.conflictIdCount=14, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=439020, ConflictResolver.conflictItemCount=22, DfDependencyCollector.collectTime=101286512, DfDependencyCollector.transformTime=739653}
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:3.13.0
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:3.4.2:compile
+[DEBUG]       org.slf4j:slf4j-api:jar:1.7.36:compile
+[DEBUG]       commons-io:commons-io:jar:2.11.0:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-incremental:jar:1.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-java:jar:1.2.0:compile
+[DEBUG]       org.ow2.asm:asm:jar:9.6:compile
+[DEBUG]       com.thoughtworks.qdox:qdox:jar:2.0.3:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.15.0:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:2.15.0:compile
+[DEBUG]       javax.inject:javax.inject:jar:1:compile
+[DEBUG]       org.codehaus.plexus:plexus-xml:jar:3.0.0:compile (version managed from default)
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:2.15.0:runtime
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:4.0.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.13.0
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.13.0
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.13.0
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.13.0
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.4.2
+[DEBUG]   Included: commons-io:commons-io:jar:2.11.0
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-java:jar:1.2.0
+[DEBUG]   Included: org.ow2.asm:asm:jar:9.6
+[DEBUG]   Included: com.thoughtworks.qdox:qdox:jar:2.0.3
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.15.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.15.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-xml:jar:3.0.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.15.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:4.0.0
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.13.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@639fee48]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile:default-compile' with basic configurator -->
+[DEBUG]   (f) annotationProcessorPathsUseDepMgmt = false
+[DEBUG]   (f) basedir = /home/project/java-database-capstone/app
+[DEBUG]   (f) buildDirectory = /home/project/java-database-capstone/app/target
+[DEBUG]   (f) compilePath = [/home/project/java-database-capstone/app/target/classes, /home/theia/.m2/repository/org/springframework/boot/spring-boot-starter-thymeleaf/3.4.4/spring-boot-starter-thymeleaf-3.4.4.jar, /home/theia/.m2/repository/org/springframework/boot/spring-boot-starter/3.4.4/spring-boot-starter-3.4.4.jar, /home/theia/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.4.4/spring-boot-starter-logging-3.4.4.jar, /home/theia/.m2/repository/ch/qos/logback/logback-classic/1.5.18/logback-classic-1.5.18.jar, /home/theia/.m2/repository/ch/qos/logback/logback-core/1.5.18/logback-core-1.5.18.jar, /home/theia/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar, /home/theia/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar, /home/theia/.m2/repository/org/slf4j/jul-to-slf4j/2.0.17/jul-to-slf4j-2.0.17.jar, /home/theia/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar, /home/theia/.m2/repository/org/yaml/snakeyaml/2.3/snakeyaml-2.3.jar, /home/theia/.m2/repository/org/thymeleaf/thymeleaf-spring6/3.1.3.RELEASE/thymeleaf-spring6-3.1.3.RELEASE.jar, /home/theia/.m2/repository/org/thymeleaf/thymeleaf/3.1.3.RELEASE/thymeleaf-3.1.3.RELEASE.jar, /home/theia/.m2/repository/org/attoparser/attoparser/2.0.7.RELEASE/attoparser-2.0.7.RELEASE.jar, /home/theia/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar, /home/theia/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar, /home/theia/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.4.4/spring-boot-starter-data-jpa-3.4.4.jar, /home/theia/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.4.4/spring-boot-starter-jdbc-3.4.4.jar, /home/theia/.m2/repository/com/zaxxer/HikariCP/5.1.0/HikariCP-5.1.0.jar, /home/theia/.m2/repository/org/springframework/spring-jdbc/6.2.5/spring-jdbc-6.2.5.jar, /home/theia/.m2/repository/org/hibernate/orm/hibernate-core/6.6.11.Final/hibernate-core-6.6.11.Final.jar, /home/theia/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar, /home/theia/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar, /home/theia/.m2/repository/org/jboss/logging/jboss-logging/3.6.1.Final/jboss-logging-3.6.1.Final.jar, /home/theia/.m2/repository/com/fasterxml/classmate/1.7.0/classmate-1.7.0.jar, /home/theia/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar, /home/theia/.m2/repository/org/springframework/data/spring-data-jpa/3.4.4/spring-data-jpa-3.4.4.jar, /home/theia/.m2/repository/org/springframework/data/spring-data-commons/3.4.4/spring-data-commons-3.4.4.jar, /home/theia/.m2/repository/org/springframework/spring-orm/6.2.5/spring-orm-6.2.5.jar, /home/theia/.m2/repository/org/springframework/spring-context/6.2.5/spring-context-6.2.5.jar, /home/theia/.m2/repository/org/springframework/spring-aop/6.2.5/spring-aop-6.2.5.jar, /home/theia/.m2/repository/org/springframework/spring-tx/6.2.5/spring-tx-6.2.5.jar, /home/theia/.m2/repository/org/springframework/spring-beans/6.2.5/spring-beans-6.2.5.jar, /home/theia/.m2/repository/org/springframework/spring-aspects/6.2.5/spring-aspects-6.2.5.jar, /home/theia/.m2/repository/org/aspectj/aspectjweaver/1.9.23/aspectjweaver-1.9.23.jar, /home/theia/.m2/repository/org/springframework/boot/spring-boot-starter-data-mongodb/3.4.4/spring-boot-starter-data-mongodb-3.4.4.jar, /home/theia/.m2/repository/org/mongodb/mongodb-driver-sync/5.2.1/mongodb-driver-sync-5.2.1.jar, /home/theia/.m2/repository/org/mongodb/bson/5.2.1/bson-5.2.1.jar, /home/theia/.m2/repository/org/mongodb/mongodb-driver-core/5.2.1/mongodb-driver-core-5.2.1.jar, /home/theia/.m2/repository/org/springframework/data/spring-data-mongodb/4.4.4/spring-data-mongodb-4.4.4.jar, /home/theia/.m2/repository/org/springframework/spring-expression/6.2.5/spring-expression-6.2.5.jar, /home/theia/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.4.4/spring-boot-starter-web-3.4.4.jar, /home/theia/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.4.4/spring-boot-starter-json-3.4.4.jar, /home/theia/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.18.3/jackson-datatype-jdk8-2.18.3.jar, /home/theia/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.18.3/jackson-datatype-jsr310-2.18.3.jar, /home/theia/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.18.3/jackson-module-parameter-names-2.18.3.jar, /home/theia/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.4.4/spring-boot-starter-tomcat-3.4.4.jar, /home/theia/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.39/tomcat-embed-core-10.1.39.jar, /home/theia/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.39/tomcat-embed-websocket-10.1.39.jar, /home/theia/.m2/repository/org/springframework/spring-web/6.2.5/spring-web-6.2.5.jar, /home/theia/.m2/repository/io/micrometer/micrometer-observation/1.14.5/micrometer-observation-1.14.5.jar, /home/theia/.m2/repository/io/micrometer/micrometer-commons/1.14.5/micrometer-commons-1.14.5.jar, /home/theia/.m2/repository/org/springframework/spring-webmvc/6.2.5/spring-webmvc-6.2.5.jar, /home/theia/.m2/repository/org/springframework/spring-core/6.2.5/spring-core-6.2.5.jar, /home/theia/.m2/repository/org/springframework/spring-jcl/6.2.5/spring-jcl-6.2.5.jar, /home/theia/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.4.4/spring-boot-starter-validation-3.4.4.jar, /home/theia/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.39/tomcat-embed-el-10.1.39.jar, /home/theia/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.2.Final/hibernate-validator-8.0.2.Final.jar, /home/theia/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar, /home/theia/.m2/repository/org/springframework/boot/spring-boot/3.4.4/spring-boot-3.4.4.jar, /home/theia/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.4.4/spring-boot-autoconfigure-3.4.4.jar, /home/theia/.m2/repository/io/jsonwebtoken/jjwt-api/0.12.6/jjwt-api-0.12.6.jar, /home/theia/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.3/jackson-databind-2.18.3.jar, /home/theia/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.3/jackson-annotations-2.18.3.jar, /home/theia/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.3/jackson-core-2.18.3.jar]
+[DEBUG]   (f) compileSourceRoots = [/home/project/java-database-capstone/app/src/main/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) createMissingPackageInfoClass = true
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) debugFileName = javac
+[DEBUG]   (f) enablePreview = false
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) failOnWarning = false
+[DEBUG]   (f) fileExtensions = [jar, class]
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) forceLegacyJavacApi = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = /home/project/java-database-capstone/app/target/generated-sources/annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile {execution: default-compile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /home/project/java-database-capstone/app/target/classes
+[DEBUG]   (f) parameters = true
+[DEBUG]   (f) project = MavenProject: com.project:back-end:0.0.1-SNAPSHOT @ /home/project/java-database-capstone/app/pom.xml
+[DEBUG]   (f) projectArtifact = com.project:back-end:jar:0.0.1-SNAPSHOT
+[DEBUG]   (s) release = 17
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@6917bb4
+[DEBUG]   (f) showCompilationChanges = false
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = true
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.8
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (s) target = 1.8
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Adding /home/project/java-database-capstone/app/target/generated-sources/annotations to compile source roots:
+  /home/project/java-database-capstone/app/src/main/java
+[DEBUG] New compile source roots:
+  /home/project/java-database-capstone/app/src/main/java
+  /home/project/java-database-capstone/app/target/generated-sources/annotations
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[INFO] 	Stale source detected: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java
+[INFO] 	Stale source detected: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/DoctorController.java
+[INFO] 	Stale source detected: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java
+[INFO] 	Stale source detected: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/DTO/Login.java
+[INFO] 	Stale source detected: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/config/WebConfig.java
+[INFO] 	Stale source detected: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PatientController.java
+[INFO] 	Stale source detected: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PrescriptionController.java
+[INFO] 	Stale source detected: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java
+[INFO] 	Stale source detected: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java
+[INFO] 	Stale source detected: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/repo/PrescriptionRepository.java
+[INFO] 	Stale source detected: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/repo/AdminRepository.java
+[INFO] 	Stale source detected: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/AppointmentService.java
+[INFO] 	Stale source detected: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java
+[INFO] 	Stale source detected: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/ValidationFailed.java
+[INFO] 	Stale source detected: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/models/Appointment.java
+[INFO] 	Stale source detected: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java
+[INFO] 	Stale source detected: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AdminController.java
+[INFO] 	Stale source detected: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/DTO/AppointmentDTO.java
+[INFO] 	Stale source detected: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/models/Prescription.java
+[INFO] 	Stale source detected: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/repo/AppointmentRepository.java
+[INFO] 	Stale source detected: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/models/Doctor.java
+[INFO] 	Stale source detected: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PrescriptionService.java
+[INFO] 	Stale source detected: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/BackEndApplication.java
+[INFO] 	Stale source detected: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/models/Admin.java
+[INFO] 	Stale source detected: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/repo/PatientRepository.java
+[INFO] 	Stale source detected: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/models/Patient.java
+[INFO] 	Stale source detected: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/repo/DoctorRepository.java
+[INFO] 	Input tree files (+): /home/project/java-database-capstone/app/src/main/java/com/project/back_end/BackEndApplication.java
+[INFO] 	Input tree files (+): /home/project/java-database-capstone/app/src/main/java/com/project/back_end/DTO/AppointmentDTO.java
+[INFO] 	Input tree files (+): /home/project/java-database-capstone/app/src/main/java/com/project/back_end/DTO/Login.java
+[INFO] 	Input tree files (+): /home/project/java-database-capstone/app/src/main/java/com/project/back_end/config/WebConfig.java
+[INFO] 	Input tree files (+): /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AdminController.java
+[INFO] 	Input tree files (+): /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java
+[INFO] 	Input tree files (+): /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/DoctorController.java
+[INFO] 	Input tree files (+): /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PatientController.java
+[INFO] 	Input tree files (+): /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PrescriptionController.java
+[INFO] 	Input tree files (+): /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/ValidationFailed.java
+[INFO] 	Input tree files (+): /home/project/java-database-capstone/app/src/main/java/com/project/back_end/models/Admin.java
+[INFO] 	Input tree files (+): /home/project/java-database-capstone/app/src/main/java/com/project/back_end/models/Appointment.java
+[INFO] 	Input tree files (+): /home/project/java-database-capstone/app/src/main/java/com/project/back_end/models/Doctor.java
+[INFO] 	Input tree files (+): /home/project/java-database-capstone/app/src/main/java/com/project/back_end/models/Patient.java
+[INFO] 	Input tree files (+): /home/project/java-database-capstone/app/src/main/java/com/project/back_end/models/Prescription.java
+[INFO] 	Input tree files (+): /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java
+[INFO] 	Input tree files (+): /home/project/java-database-capstone/app/src/main/java/com/project/back_end/repo/AdminRepository.java
+[INFO] 	Input tree files (+): /home/project/java-database-capstone/app/src/main/java/com/project/back_end/repo/AppointmentRepository.java
+[INFO] 	Input tree files (+): /home/project/java-database-capstone/app/src/main/java/com/project/back_end/repo/DoctorRepository.java
+[INFO] 	Input tree files (+): /home/project/java-database-capstone/app/src/main/java/com/project/back_end/repo/PatientRepository.java
+[INFO] 	Input tree files (+): /home/project/java-database-capstone/app/src/main/java/com/project/back_end/repo/PrescriptionRepository.java
+[INFO] 	Input tree files (+): /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/AppointmentService.java
+[INFO] 	Input tree files (+): /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java
+[INFO] 	Input tree files (+): /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java
+[INFO] 	Input tree files (+): /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PrescriptionService.java
+[INFO] 	Input tree files (+): /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java
+[INFO] 	Input tree files (+): /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java
+[INFO] Recompiling the module because of changed source code.
+[DEBUG] Classpath:
+[DEBUG]  /home/project/java-database-capstone/app/target/classes
+[DEBUG]  /home/theia/.m2/repository/org/springframework/boot/spring-boot-starter-thymeleaf/3.4.4/spring-boot-starter-thymeleaf-3.4.4.jar
+[DEBUG]  /home/theia/.m2/repository/org/springframework/boot/spring-boot-starter/3.4.4/spring-boot-starter-3.4.4.jar
+[DEBUG]  /home/theia/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.4.4/spring-boot-starter-logging-3.4.4.jar
+[DEBUG]  /home/theia/.m2/repository/ch/qos/logback/logback-classic/1.5.18/logback-classic-1.5.18.jar
+[DEBUG]  /home/theia/.m2/repository/ch/qos/logback/logback-core/1.5.18/logback-core-1.5.18.jar
+[DEBUG]  /home/theia/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar
+[DEBUG]  /home/theia/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar
+[DEBUG]  /home/theia/.m2/repository/org/slf4j/jul-to-slf4j/2.0.17/jul-to-slf4j-2.0.17.jar
+[DEBUG]  /home/theia/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar
+[DEBUG]  /home/theia/.m2/repository/org/yaml/snakeyaml/2.3/snakeyaml-2.3.jar
+[DEBUG]  /home/theia/.m2/repository/org/thymeleaf/thymeleaf-spring6/3.1.3.RELEASE/thymeleaf-spring6-3.1.3.RELEASE.jar
+[DEBUG]  /home/theia/.m2/repository/org/thymeleaf/thymeleaf/3.1.3.RELEASE/thymeleaf-3.1.3.RELEASE.jar
+[DEBUG]  /home/theia/.m2/repository/org/attoparser/attoparser/2.0.7.RELEASE/attoparser-2.0.7.RELEASE.jar
+[DEBUG]  /home/theia/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar
+[DEBUG]  /home/theia/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar
+[DEBUG]  /home/theia/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.4.4/spring-boot-starter-data-jpa-3.4.4.jar
+[DEBUG]  /home/theia/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.4.4/spring-boot-starter-jdbc-3.4.4.jar
+[DEBUG]  /home/theia/.m2/repository/com/zaxxer/HikariCP/5.1.0/HikariCP-5.1.0.jar
+[DEBUG]  /home/theia/.m2/repository/org/springframework/spring-jdbc/6.2.5/spring-jdbc-6.2.5.jar
+[DEBUG]  /home/theia/.m2/repository/org/hibernate/orm/hibernate-core/6.6.11.Final/hibernate-core-6.6.11.Final.jar
+[DEBUG]  /home/theia/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar
+[DEBUG]  /home/theia/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar
+[DEBUG]  /home/theia/.m2/repository/org/jboss/logging/jboss-logging/3.6.1.Final/jboss-logging-3.6.1.Final.jar
+[DEBUG]  /home/theia/.m2/repository/com/fasterxml/classmate/1.7.0/classmate-1.7.0.jar
+[DEBUG]  /home/theia/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar
+[DEBUG]  /home/theia/.m2/repository/org/springframework/data/spring-data-jpa/3.4.4/spring-data-jpa-3.4.4.jar
+[DEBUG]  /home/theia/.m2/repository/org/springframework/data/spring-data-commons/3.4.4/spring-data-commons-3.4.4.jar
+[DEBUG]  /home/theia/.m2/repository/org/springframework/spring-orm/6.2.5/spring-orm-6.2.5.jar
+[DEBUG]  /home/theia/.m2/repository/org/springframework/spring-context/6.2.5/spring-context-6.2.5.jar
+[DEBUG]  /home/theia/.m2/repository/org/springframework/spring-aop/6.2.5/spring-aop-6.2.5.jar
+[DEBUG]  /home/theia/.m2/repository/org/springframework/spring-tx/6.2.5/spring-tx-6.2.5.jar
+[DEBUG]  /home/theia/.m2/repository/org/springframework/spring-beans/6.2.5/spring-beans-6.2.5.jar
+[DEBUG]  /home/theia/.m2/repository/org/springframework/spring-aspects/6.2.5/spring-aspects-6.2.5.jar
+[DEBUG]  /home/theia/.m2/repository/org/aspectj/aspectjweaver/1.9.23/aspectjweaver-1.9.23.jar
+[DEBUG]  /home/theia/.m2/repository/org/springframework/boot/spring-boot-starter-data-mongodb/3.4.4/spring-boot-starter-data-mongodb-3.4.4.jar
+[DEBUG]  /home/theia/.m2/repository/org/mongodb/mongodb-driver-sync/5.2.1/mongodb-driver-sync-5.2.1.jar
+[DEBUG]  /home/theia/.m2/repository/org/mongodb/bson/5.2.1/bson-5.2.1.jar
+[DEBUG]  /home/theia/.m2/repository/org/mongodb/mongodb-driver-core/5.2.1/mongodb-driver-core-5.2.1.jar
+[DEBUG]  /home/theia/.m2/repository/org/springframework/data/spring-data-mongodb/4.4.4/spring-data-mongodb-4.4.4.jar
+[DEBUG]  /home/theia/.m2/repository/org/springframework/spring-expression/6.2.5/spring-expression-6.2.5.jar
+[DEBUG]  /home/theia/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.4.4/spring-boot-starter-web-3.4.4.jar
+[DEBUG]  /home/theia/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.4.4/spring-boot-starter-json-3.4.4.jar
+[DEBUG]  /home/theia/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.18.3/jackson-datatype-jdk8-2.18.3.jar
+[DEBUG]  /home/theia/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.18.3/jackson-datatype-jsr310-2.18.3.jar
+[DEBUG]  /home/theia/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.18.3/jackson-module-parameter-names-2.18.3.jar
+[DEBUG]  /home/theia/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.4.4/spring-boot-starter-tomcat-3.4.4.jar
+[DEBUG]  /home/theia/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.39/tomcat-embed-core-10.1.39.jar
+[DEBUG]  /home/theia/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.39/tomcat-embed-websocket-10.1.39.jar
+[DEBUG]  /home/theia/.m2/repository/org/springframework/spring-web/6.2.5/spring-web-6.2.5.jar
+[DEBUG]  /home/theia/.m2/repository/io/micrometer/micrometer-observation/1.14.5/micrometer-observation-1.14.5.jar
+[DEBUG]  /home/theia/.m2/repository/io/micrometer/micrometer-commons/1.14.5/micrometer-commons-1.14.5.jar
+[DEBUG]  /home/theia/.m2/repository/org/springframework/spring-webmvc/6.2.5/spring-webmvc-6.2.5.jar
+[DEBUG]  /home/theia/.m2/repository/org/springframework/spring-core/6.2.5/spring-core-6.2.5.jar
+[DEBUG]  /home/theia/.m2/repository/org/springframework/spring-jcl/6.2.5/spring-jcl-6.2.5.jar
+[DEBUG]  /home/theia/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.4.4/spring-boot-starter-validation-3.4.4.jar
+[DEBUG]  /home/theia/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.39/tomcat-embed-el-10.1.39.jar
+[DEBUG]  /home/theia/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.2.Final/hibernate-validator-8.0.2.Final.jar
+[DEBUG]  /home/theia/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar
+[DEBUG]  /home/theia/.m2/repository/org/springframework/boot/spring-boot/3.4.4/spring-boot-3.4.4.jar
+[DEBUG]  /home/theia/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.4.4/spring-boot-autoconfigure-3.4.4.jar
+[DEBUG]  /home/theia/.m2/repository/io/jsonwebtoken/jjwt-api/0.12.6/jjwt-api-0.12.6.jar
+[DEBUG]  /home/theia/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.3/jackson-databind-2.18.3.jar
+[DEBUG]  /home/theia/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.3/jackson-annotations-2.18.3.jar
+[DEBUG]  /home/theia/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.3/jackson-core-2.18.3.jar
+[DEBUG] Source roots:
+[DEBUG]  /home/project/java-database-capstone/app/src/main/java
+[DEBUG]  /home/project/java-database-capstone/app/target/generated-sources/annotations
+[DEBUG] Command line options:
+[DEBUG] -d /home/project/java-database-capstone/app/target/classes -classpath /home/project/java-database-capstone/app/target/classes:/home/theia/.m2/repository/org/springframework/boot/spring-boot-starter-thymeleaf/3.4.4/spring-boot-starter-thymeleaf-3.4.4.jar:/home/theia/.m2/repository/org/springframework/boot/spring-boot-starter/3.4.4/spring-boot-starter-3.4.4.jar:/home/theia/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.4.4/spring-boot-starter-logging-3.4.4.jar:/home/theia/.m2/repository/ch/qos/logback/logback-classic/1.5.18/logback-classic-1.5.18.jar:/home/theia/.m2/repository/ch/qos/logback/logback-core/1.5.18/logback-core-1.5.18.jar:/home/theia/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar:/home/theia/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/home/theia/.m2/repository/org/slf4j/jul-to-slf4j/2.0.17/jul-to-slf4j-2.0.17.jar:/home/theia/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/theia/.m2/repository/org/yaml/snakeyaml/2.3/snakeyaml-2.3.jar:/home/theia/.m2/repository/org/thymeleaf/thymeleaf-spring6/3.1.3.RELEASE/thymeleaf-spring6-3.1.3.RELEASE.jar:/home/theia/.m2/repository/org/thymeleaf/thymeleaf/3.1.3.RELEASE/thymeleaf-3.1.3.RELEASE.jar:/home/theia/.m2/repository/org/attoparser/attoparser/2.0.7.RELEASE/attoparser-2.0.7.RELEASE.jar:/home/theia/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/home/theia/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:/home/theia/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.4.4/spring-boot-starter-data-jpa-3.4.4.jar:/home/theia/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.4.4/spring-boot-starter-jdbc-3.4.4.jar:/home/theia/.m2/repository/com/zaxxer/HikariCP/5.1.0/HikariCP-5.1.0.jar:/home/theia/.m2/repository/org/springframework/spring-jdbc/6.2.5/spring-jdbc-6.2.5.jar:/home/theia/.m2/repository/org/hibernate/orm/hibernate-core/6.6.11.Final/hibernate-core-6.6.11.Final.jar:/home/theia/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/theia/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/theia/.m2/repository/org/jboss/logging/jboss-logging/3.6.1.Final/jboss-logging-3.6.1.Final.jar:/home/theia/.m2/repository/com/fasterxml/classmate/1.7.0/classmate-1.7.0.jar:/home/theia/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/home/theia/.m2/repository/org/springframework/data/spring-data-jpa/3.4.4/spring-data-jpa-3.4.4.jar:/home/theia/.m2/repository/org/springframework/data/spring-data-commons/3.4.4/spring-data-commons-3.4.4.jar:/home/theia/.m2/repository/org/springframework/spring-orm/6.2.5/spring-orm-6.2.5.jar:/home/theia/.m2/repository/org/springframework/spring-context/6.2.5/spring-context-6.2.5.jar:/home/theia/.m2/repository/org/springframework/spring-aop/6.2.5/spring-aop-6.2.5.jar:/home/theia/.m2/repository/org/springframework/spring-tx/6.2.5/spring-tx-6.2.5.jar:/home/theia/.m2/repository/org/springframework/spring-beans/6.2.5/spring-beans-6.2.5.jar:/home/theia/.m2/repository/org/springframework/spring-aspects/6.2.5/spring-aspects-6.2.5.jar:/home/theia/.m2/repository/org/aspectj/aspectjweaver/1.9.23/aspectjweaver-1.9.23.jar:/home/theia/.m2/repository/org/springframework/boot/spring-boot-starter-data-mongodb/3.4.4/spring-boot-starter-data-mongodb-3.4.4.jar:/home/theia/.m2/repository/org/mongodb/mongodb-driver-sync/5.2.1/mongodb-driver-sync-5.2.1.jar:/home/theia/.m2/repository/org/mongodb/bson/5.2.1/bson-5.2.1.jar:/home/theia/.m2/repository/org/mongodb/mongodb-driver-core/5.2.1/mongodb-driver-core-5.2.1.jar:/home/theia/.m2/repository/org/springframework/data/spring-data-mongodb/4.4.4/spring-data-mongodb-4.4.4.jar:/home/theia/.m2/repository/org/springframework/spring-expression/6.2.5/spring-expression-6.2.5.jar:/home/theia/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.4.4/spring-boot-starter-web-3.4.4.jar:/home/theia/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.4.4/spring-boot-starter-json-3.4.4.jar:/home/theia/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.18.3/jackson-datatype-jdk8-2.18.3.jar:/home/theia/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.18.3/jackson-datatype-jsr310-2.18.3.jar:/home/theia/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.18.3/jackson-module-parameter-names-2.18.3.jar:/home/theia/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.4.4/spring-boot-starter-tomcat-3.4.4.jar:/home/theia/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.39/tomcat-embed-core-10.1.39.jar:/home/theia/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.39/tomcat-embed-websocket-10.1.39.jar:/home/theia/.m2/repository/org/springframework/spring-web/6.2.5/spring-web-6.2.5.jar:/home/theia/.m2/repository/io/micrometer/micrometer-observation/1.14.5/micrometer-observation-1.14.5.jar:/home/theia/.m2/repository/io/micrometer/micrometer-commons/1.14.5/micrometer-commons-1.14.5.jar:/home/theia/.m2/repository/org/springframework/spring-webmvc/6.2.5/spring-webmvc-6.2.5.jar:/home/theia/.m2/repository/org/springframework/spring-core/6.2.5/spring-core-6.2.5.jar:/home/theia/.m2/repository/org/springframework/spring-jcl/6.2.5/spring-jcl-6.2.5.jar:/home/theia/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.4.4/spring-boot-starter-validation-3.4.4.jar:/home/theia/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.39/tomcat-embed-el-10.1.39.jar:/home/theia/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.2.Final/hibernate-validator-8.0.2.Final.jar:/home/theia/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/home/theia/.m2/repository/org/springframework/boot/spring-boot/3.4.4/spring-boot-3.4.4.jar:/home/theia/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.4.4/spring-boot-autoconfigure-3.4.4.jar:/home/theia/.m2/repository/io/jsonwebtoken/jjwt-api/0.12.6/jjwt-api-0.12.6.jar:/home/theia/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.18.3/jackson-databind-2.18.3.jar:/home/theia/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.18.3/jackson-annotations-2.18.3.jar:/home/theia/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.18.3/jackson-core-2.18.3.jar: -sourcepath /home/project/java-database-capstone/app/src/main/java:/home/project/java-database-capstone/app/target/generated-sources/annotations: -s /home/project/java-database-capstone/app/target/generated-sources/annotations -g -parameters --release 17 -encoding UTF-8 -XDuseUnsharedTable=true
+[DEBUG] incrementalBuildHelper#beforeRebuildExecution
+[INFO] Compiling 27 source files with javac [debug parameters release 17] to target/classes
+[DEBUG] incrementalBuildHelper#afterRebuildExecution
+[INFO] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java: /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java uses or overrides a deprecated API.
+[INFO] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java: Recompile with -Xlint:deprecation for details.
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AdminController.java:[4,37] cannot find symbol
+  symbol:   class AdminService
+  location: package com.project.back_end.services
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AdminController.java:[16,13] cannot find symbol
+  symbol:   class AdminService
+  location: class com.project.back_end.controllers.AdminController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[3,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[4,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[5,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[8,32] package com.project.back_end.dto does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[50,62] cannot find symbol
+  symbol:   class Admin
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[73,36] cannot find symbol
+  symbol:   class Appointment
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[91,36] cannot find symbol
+  symbol:   class Patient
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[97,69] cannot find symbol
+  symbol:   class Login
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[35,27] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[47,29] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[59,17] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[76,63] cannot find symbol
+  symbol:   class Login
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[135,50] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[135,18] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[8,1] com.project.back_end.services.Service is already defined in this compilation unit
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[3,1] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PatientController.java:[3,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PatientController.java:[4,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PatientController.java:[37,57] cannot find symbol
+  symbol:   class Patient
+  location: class com.project.back_end.controllers.PatientController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PatientController.java:[52,67] cannot find symbol
+  symbol:   class Login
+  location: class com.project.back_end.controllers.PatientController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PrescriptionController.java:[3,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PrescriptionService.java:[3,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PrescriptionController.java:[23,88] cannot find symbol
+  symbol:   class Prescription
+  location: class com.project.back_end.controllers.PrescriptionController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/repo/PrescriptionRepository.java:[3,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/repo/PrescriptionRepository.java:[10,65] cannot find symbol
+  symbol: class Prescription
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PrescriptionService.java:[20,65] cannot find symbol
+  symbol:   class Prescription
+  location: class com.project.back_end.services.PrescriptionService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/repo/PrescriptionRepository.java:[13,10] cannot find symbol
+  symbol:   class Prescription
+  location: interface com.project.back_end.repo.PrescriptionRepository
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[2,2] cannot find symbol
+  symbol: class Controller
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[30,13] cannot find symbol
+  symbol:   class TokenValidationService
+  location: class com.project.back_end.mvc.DashboardController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[29,2] cannot find symbol
+  symbol:   class Autowired
+  location: class com.project.back_end.mvc.DashboardController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[34,35] cannot find symbol
+  symbol:   class PathVariable
+  location: class com.project.back_end.mvc.DashboardController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[33,6] cannot find symbol
+  symbol:   class GetMapping
+  location: class com.project.back_end.mvc.DashboardController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[48,36] cannot find symbol
+  symbol:   class PathVariable
+  location: class com.project.back_end.mvc.DashboardController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[47,6] cannot find symbol
+  symbol:   class GetMapping
+  location: class com.project.back_end.mvc.DashboardController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[30,13] bad operand type org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.lang.String>> for unary operator '!'
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[36,60] method getAppointment in class com.project.back_end.services.AppointmentService cannot be applied to given types;
+  required: java.lang.String,java.time.LocalDate,java.lang.String
+  found:    java.lang.String,java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[46,13] bad operand type org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.lang.String>> for unary operator '!'
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[51,13] bad operand type int for unary operator '!'
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[56,60] incompatible types: int cannot be converted to boolean
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[72,13] bad operand type org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.lang.String>> for unary operator '!'
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[77,63] incompatible types: org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.lang.String>> cannot be converted to boolean
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[93,13] bad operand type org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.lang.String>> for unary operator '!'
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[98,47] method cancelAppointment in class com.project.back_end.services.AppointmentService cannot be applied to given types;
+  required: long,java.lang.String
+  found:    java.lang.Long
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/AppointmentService.java:[68,42] cannot find symbol
+  symbol:   method extractIdFromToken(java.lang.String)
+  location: variable tokenService of type com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/AppointmentService.java:[85,37] cannot find symbol
+  symbol:   method extractIdFromToken(java.lang.String)
+  location: variable tokenService of type com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[52,9] cannot find symbol
+  symbol:   class Admin
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[66,14] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[74,18] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[80,9] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[92,9] cannot find symbol
+  symbol:   class Patient
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[99,9] cannot find symbol
+  symbol:   class Patient
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[115,43] cannot find symbol
+  symbol:   method extractUsername(java.lang.String)
+  location: variable tokenService of type com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[116,9] cannot find symbol
+  symbol:   class Patient
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[123,14] cannot find symbol
+  symbol:   class Appointment
+  location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java:[55,20] cannot find symbol
+  symbol:   method parserBuilder()
+  location: class io.jsonwebtoken.Jwts
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[30,14] cannot find symbol
+  symbol:   class Appointment
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[30,63] cannot find symbol
+  symbol:   method findByDoctorIdAndDate(java.lang.Long,java.time.LocalDate)
+  location: variable appointmentRepository of type com.project.back_end.repo.AppointmentRepository
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[31,62] cannot find symbol
+  symbol:   variable Appointment
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[77,9] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[94,14] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[101,14] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[108,14] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[115,14] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[122,14] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[129,14] cannot find symbol
+  symbol:   class Doctor
+  location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[41,36] cannot find symbol
+  symbol:   method extractEmail(java.lang.String)
+  location: variable tokenService of type com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[47,14] cannot find symbol
+  symbol:   class AppointmentDTO
+  location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[47,61] cannot find symbol
+  symbol:   method getAppointments()
+  location: class com.project.back_end.models.Patient
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[48,22] cannot find symbol
+  symbol:   class AppointmentDTO
+  location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[60,63] cannot find symbol
+  symbol:   method getAppointments()
+  location: class com.project.back_end.models.Patient
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[61,14] cannot find symbol
+  symbol:   class AppointmentDTO
+  location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[70,22] cannot find symbol
+  symbol:   class AppointmentDTO
+  location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[82,14] cannot find symbol
+  symbol:   class AppointmentDTO
+  location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[82,62] cannot find symbol
+  symbol:   method getAppointments()
+  location: class com.project.back_end.models.Patient
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[84,22] cannot find symbol
+  symbol:   class AppointmentDTO
+  location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[96,63] cannot find symbol
+  symbol:   method getAppointments()
+  location: class com.project.back_end.models.Patient
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[97,14] cannot find symbol
+  symbol:   class AppointmentDTO
+  location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[107,22] cannot find symbol
+  symbol:   class AppointmentDTO
+  location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[114,36] cannot find symbol
+  symbol:   method extractEmail(java.lang.String)
+  location: variable tokenService of type com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/DoctorController.java:[29,29] method getDoctorAvailability in class com.project.back_end.services.DoctorService cannot be applied to given types;
+  required: java.lang.Long,java.time.LocalDate
+  found:    java.lang.String,java.lang.Long,java.lang.String,java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/DoctorController.java:[34,40] incompatible types: java.util.List<Doctor> cannot be converted to org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.util.List<com.project.back_end.models.Doctor>>>
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/DoctorController.java:[40,29] method saveDoctor in class com.project.back_end.services.DoctorService cannot be applied to given types;
+  required: Doctor
+  found:    com.project.back_end.models.Doctor,java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/DoctorController.java:[51,29] method updateDoctor in class com.project.back_end.services.DoctorService cannot be applied to given types;
+  required: Doctor
+  found:    com.project.back_end.models.Doctor,java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/DoctorController.java:[57,29] method deleteDoctor in class com.project.back_end.services.DoctorService cannot be applied to given types;
+  required: long
+  found:    java.lang.Long,java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/DoctorController.java:[64,36] incompatible types: java.util.Map<java.lang.String,java.lang.Object> cannot be converted to org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.util.List<com.project.back_end.models.Doctor>>>
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PatientController.java:[28,49] method validateToken in class com.project.back_end.services.Service cannot be applied to given types;
+  required: java.lang.String,java.lang.String
+  found:    java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PatientController.java:[59,49] method validateToken in class com.project.back_end.services.Service cannot be applied to given types;
+  required: java.lang.String,java.lang.String
+  found:    java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PatientController.java:[63,48] method getPatientAppointment in class com.project.back_end.services.PatientService cannot be applied to given types;
+  required: java.lang.Long,java.lang.String
+  found:    java.lang.Long
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PatientController.java:[73,49] method validateToken in class com.project.back_end.services.Service cannot be applied to given types;
+  required: java.lang.String,java.lang.String
+  found:    java.lang.String
+  reason: actual and formal argument lists differ in length
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PrescriptionController.java:[25,52] incompatible types: org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.lang.String>> cannot be converted to boolean
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PrescriptionController.java:[40,52] incompatible types: org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.lang.String>> cannot be converted to boolean
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PrescriptionController.java:[44,13] cannot find symbol
+  symbol:   class Prescription
+  location: class com.project.back_end.controllers.PrescriptionController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PrescriptionService.java:[36,13] cannot find symbol
+  symbol:   class Prescription
+  location: class com.project.back_end.services.PrescriptionService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[35,9] cannot find symbol
+  symbol:   class Map
+  location: class com.project.back_end.mvc.DashboardController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[49,9] cannot find symbol
+  symbol:   class Map
+  location: class com.project.back_end.mvc.DashboardController
+[INFO] 97 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.229 s
+[INFO] Finished at: 2025-07-18T10:35:40-04:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile (default-compile) on project back-end: Compilation failure: Compilation failure: 
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AdminController.java:[4,37] cannot find symbol
+[ERROR]   symbol:   class AdminService
+[ERROR]   location: package com.project.back_end.services
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AdminController.java:[16,13] cannot find symbol
+[ERROR]   symbol:   class AdminService
+[ERROR]   location: class com.project.back_end.controllers.AdminController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[3,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[4,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[5,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[8,32] package com.project.back_end.dto does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[50,62] cannot find symbol
+[ERROR]   symbol:   class Admin
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[73,36] cannot find symbol
+[ERROR]   symbol:   class Appointment
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[91,36] cannot find symbol
+[ERROR]   symbol:   class Patient
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[97,69] cannot find symbol
+[ERROR]   symbol:   class Login
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[35,27] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[47,29] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[59,17] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[76,63] cannot find symbol
+[ERROR]   symbol:   class Login
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[135,50] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[135,18] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[8,1] com.project.back_end.services.Service is already defined in this compilation unit
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[3,1] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PatientController.java:[3,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PatientController.java:[4,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PatientController.java:[37,57] cannot find symbol
+[ERROR]   symbol:   class Patient
+[ERROR]   location: class com.project.back_end.controllers.PatientController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PatientController.java:[52,67] cannot find symbol
+[ERROR]   symbol:   class Login
+[ERROR]   location: class com.project.back_end.controllers.PatientController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PrescriptionController.java:[3,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PrescriptionService.java:[3,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PrescriptionController.java:[23,88] cannot find symbol
+[ERROR]   symbol:   class Prescription
+[ERROR]   location: class com.project.back_end.controllers.PrescriptionController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/repo/PrescriptionRepository.java:[3,34] package com.project.back_end.model does not exist
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/repo/PrescriptionRepository.java:[10,65] cannot find symbol
+[ERROR]   symbol: class Prescription
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PrescriptionService.java:[20,65] cannot find symbol
+[ERROR]   symbol:   class Prescription
+[ERROR]   location: class com.project.back_end.services.PrescriptionService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/repo/PrescriptionRepository.java:[13,10] cannot find symbol
+[ERROR]   symbol:   class Prescription
+[ERROR]   location: interface com.project.back_end.repo.PrescriptionRepository
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[2,2] cannot find symbol
+[ERROR]   symbol: class Controller
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[30,13] cannot find symbol
+[ERROR]   symbol:   class TokenValidationService
+[ERROR]   location: class com.project.back_end.mvc.DashboardController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[29,2] cannot find symbol
+[ERROR]   symbol:   class Autowired
+[ERROR]   location: class com.project.back_end.mvc.DashboardController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[34,35] cannot find symbol
+[ERROR]   symbol:   class PathVariable
+[ERROR]   location: class com.project.back_end.mvc.DashboardController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[33,6] cannot find symbol
+[ERROR]   symbol:   class GetMapping
+[ERROR]   location: class com.project.back_end.mvc.DashboardController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[48,36] cannot find symbol
+[ERROR]   symbol:   class PathVariable
+[ERROR]   location: class com.project.back_end.mvc.DashboardController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[47,6] cannot find symbol
+[ERROR]   symbol:   class GetMapping
+[ERROR]   location: class com.project.back_end.mvc.DashboardController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[30,13] bad operand type org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.lang.String>> for unary operator '!'
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[36,60] method getAppointment in class com.project.back_end.services.AppointmentService cannot be applied to given types;
+[ERROR]   required: java.lang.String,java.time.LocalDate,java.lang.String
+[ERROR]   found:    java.lang.String,java.lang.String
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[46,13] bad operand type org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.lang.String>> for unary operator '!'
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[51,13] bad operand type int for unary operator '!'
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[56,60] incompatible types: int cannot be converted to boolean
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[72,13] bad operand type org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.lang.String>> for unary operator '!'
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[77,63] incompatible types: org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.lang.String>> cannot be converted to boolean
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[93,13] bad operand type org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.lang.String>> for unary operator '!'
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/AppointmentController.java:[98,47] method cancelAppointment in class com.project.back_end.services.AppointmentService cannot be applied to given types;
+[ERROR]   required: long,java.lang.String
+[ERROR]   found:    java.lang.Long
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/AppointmentService.java:[68,42] cannot find symbol
+[ERROR]   symbol:   method extractIdFromToken(java.lang.String)
+[ERROR]   location: variable tokenService of type com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/AppointmentService.java:[85,37] cannot find symbol
+[ERROR]   symbol:   method extractIdFromToken(java.lang.String)
+[ERROR]   location: variable tokenService of type com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[52,9] cannot find symbol
+[ERROR]   symbol:   class Admin
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[66,14] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[74,18] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[80,9] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[92,9] cannot find symbol
+[ERROR]   symbol:   class Patient
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[99,9] cannot find symbol
+[ERROR]   symbol:   class Patient
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[115,43] cannot find symbol
+[ERROR]   symbol:   method extractUsername(java.lang.String)
+[ERROR]   location: variable tokenService of type com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[116,9] cannot find symbol
+[ERROR]   symbol:   class Patient
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/Service.java:[123,14] cannot find symbol
+[ERROR]   symbol:   class Appointment
+[ERROR]   location: class com.project.back_end.services.Service
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/TokenService.java:[55,20] cannot find symbol
+[ERROR]   symbol:   method parserBuilder()
+[ERROR]   location: class io.jsonwebtoken.Jwts
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[30,14] cannot find symbol
+[ERROR]   symbol:   class Appointment
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[30,63] cannot find symbol
+[ERROR]   symbol:   method findByDoctorIdAndDate(java.lang.Long,java.time.LocalDate)
+[ERROR]   location: variable appointmentRepository of type com.project.back_end.repo.AppointmentRepository
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[31,62] cannot find symbol
+[ERROR]   symbol:   variable Appointment
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[77,9] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[94,14] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[101,14] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[108,14] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[115,14] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[122,14] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/DoctorService.java:[129,14] cannot find symbol
+[ERROR]   symbol:   class Doctor
+[ERROR]   location: class com.project.back_end.services.DoctorService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[41,36] cannot find symbol
+[ERROR]   symbol:   method extractEmail(java.lang.String)
+[ERROR]   location: variable tokenService of type com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[47,14] cannot find symbol
+[ERROR]   symbol:   class AppointmentDTO
+[ERROR]   location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[47,61] cannot find symbol
+[ERROR]   symbol:   method getAppointments()
+[ERROR]   location: class com.project.back_end.models.Patient
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[48,22] cannot find symbol
+[ERROR]   symbol:   class AppointmentDTO
+[ERROR]   location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[60,63] cannot find symbol
+[ERROR]   symbol:   method getAppointments()
+[ERROR]   location: class com.project.back_end.models.Patient
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[61,14] cannot find symbol
+[ERROR]   symbol:   class AppointmentDTO
+[ERROR]   location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[70,22] cannot find symbol
+[ERROR]   symbol:   class AppointmentDTO
+[ERROR]   location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[82,14] cannot find symbol
+[ERROR]   symbol:   class AppointmentDTO
+[ERROR]   location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[82,62] cannot find symbol
+[ERROR]   symbol:   method getAppointments()
+[ERROR]   location: class com.project.back_end.models.Patient
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[84,22] cannot find symbol
+[ERROR]   symbol:   class AppointmentDTO
+[ERROR]   location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[96,63] cannot find symbol
+[ERROR]   symbol:   method getAppointments()
+[ERROR]   location: class com.project.back_end.models.Patient
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[97,14] cannot find symbol
+[ERROR]   symbol:   class AppointmentDTO
+[ERROR]   location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[107,22] cannot find symbol
+[ERROR]   symbol:   class AppointmentDTO
+[ERROR]   location: class com.project.back_end.services.PatientService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PatientService.java:[114,36] cannot find symbol
+[ERROR]   symbol:   method extractEmail(java.lang.String)
+[ERROR]   location: variable tokenService of type com.project.back_end.services.TokenService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/DoctorController.java:[29,29] method getDoctorAvailability in class com.project.back_end.services.DoctorService cannot be applied to given types;
+[ERROR]   required: java.lang.Long,java.time.LocalDate
+[ERROR]   found:    java.lang.String,java.lang.Long,java.lang.String,java.lang.String
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/DoctorController.java:[34,40] incompatible types: java.util.List<Doctor> cannot be converted to org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.util.List<com.project.back_end.models.Doctor>>>
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/DoctorController.java:[40,29] method saveDoctor in class com.project.back_end.services.DoctorService cannot be applied to given types;
+[ERROR]   required: Doctor
+[ERROR]   found:    com.project.back_end.models.Doctor,java.lang.String
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/DoctorController.java:[51,29] method updateDoctor in class com.project.back_end.services.DoctorService cannot be applied to given types;
+[ERROR]   required: Doctor
+[ERROR]   found:    com.project.back_end.models.Doctor,java.lang.String
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/DoctorController.java:[57,29] method deleteDoctor in class com.project.back_end.services.DoctorService cannot be applied to given types;
+[ERROR]   required: long
+[ERROR]   found:    java.lang.Long,java.lang.String
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/DoctorController.java:[64,36] incompatible types: java.util.Map<java.lang.String,java.lang.Object> cannot be converted to org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.util.List<com.project.back_end.models.Doctor>>>
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PatientController.java:[28,49] method validateToken in class com.project.back_end.services.Service cannot be applied to given types;
+[ERROR]   required: java.lang.String,java.lang.String
+[ERROR]   found:    java.lang.String
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PatientController.java:[59,49] method validateToken in class com.project.back_end.services.Service cannot be applied to given types;
+[ERROR]   required: java.lang.String,java.lang.String
+[ERROR]   found:    java.lang.String
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PatientController.java:[63,48] method getPatientAppointment in class com.project.back_end.services.PatientService cannot be applied to given types;
+[ERROR]   required: java.lang.Long,java.lang.String
+[ERROR]   found:    java.lang.Long
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PatientController.java:[73,49] method validateToken in class com.project.back_end.services.Service cannot be applied to given types;
+[ERROR]   required: java.lang.String,java.lang.String
+[ERROR]   found:    java.lang.String
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PrescriptionController.java:[25,52] incompatible types: org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.lang.String>> cannot be converted to boolean
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PrescriptionController.java:[40,52] incompatible types: org.springframework.http.ResponseEntity<java.util.Map<java.lang.String,java.lang.String>> cannot be converted to boolean
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/controllers/PrescriptionController.java:[44,13] cannot find symbol
+[ERROR]   symbol:   class Prescription
+[ERROR]   location: class com.project.back_end.controllers.PrescriptionController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/services/PrescriptionService.java:[36,13] cannot find symbol
+[ERROR]   symbol:   class Prescription
+[ERROR]   location: class com.project.back_end.services.PrescriptionService
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[35,9] cannot find symbol
+[ERROR]   symbol:   class Map
+[ERROR]   location: class com.project.back_end.mvc.DashboardController
+[ERROR] /home/project/java-database-capstone/app/src/main/java/com/project/back_end/mvc/DashboardController.java:[49,9] cannot find symbol
+[ERROR]   symbol:   class Map
+[ERROR]   location: class com.project.back_end.mvc.DashboardController
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile (default-compile) on project back-end: Compilation failure
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:333)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:906)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:283)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:206)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:103)
+    at java.lang.reflect.Method.invoke (Method.java:580)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:283)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:226)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:407)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:348)
+Caused by: org.apache.maven.plugin.compiler.CompilationFailureException: Compilation failure
+    at org.apache.maven.plugin.compiler.AbstractCompilerMojo.execute (AbstractCompilerMojo.java:1309)
+    at org.apache.maven.plugin.compiler.CompilerMojo.execute (CompilerMojo.java:215)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:126)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:328)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:906)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:283)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:206)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:103)
+    at java.lang.reflect.Method.invoke (Method.java:580)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:283)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:226)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:407)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:348)
+[ERROR] 
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[DEBUG] Shutting down adapter factory; available factories [file-lock, rwlock-local, semaphore-local, noop]; available name mappers [discriminating, file-gav, file-hgav, file-static, gav, static]
+[DEBUG] Shutting down 'file-lock' factory
+[DEBUG] Shutting down 'rwlock-local' factory
+[DEBUG] Shutting down 'semaphore-local' factory
+[DEBUG] Shutting down 'noop' factory

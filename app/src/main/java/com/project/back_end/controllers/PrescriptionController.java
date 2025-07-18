@@ -1,19 +1,15 @@
-package com.project.controller;
+package com.project.back_end.controllers;
 
+import com.project.back_end.model.Prescription;
+import com.project.back_end.services.PrescriptionService;
+import com.project.back_end.services.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.project.model.Prescription;
-import com.project.service.PrescriptionService;
-import com.project.service.Service;
-
-import java.util.List;
-import java.util.Map;
-
 @RestController
-@RequestMapping("${api.path}prescription")
+@RequestMapping("${api.path}" + "prescription")
 public class PrescriptionController {
 
     @Autowired
@@ -24,39 +20,34 @@ public class PrescriptionController {
 
     // 1. Save Prescription
     @PostMapping("/{token}")
-    public ResponseEntity<Map<String, String>> savePrescription(@PathVariable String token, @RequestBody Prescription prescription) {
-        // Validate the token
-        if (!service.validateToken(token)) {
-            return ResponseEntity
-                    .status(HttpStatus.UNAUTHORIZED)
-                    .body(Map.of("message", "Invalid token"));
+    public ResponseEntity<?> savePrescription(@PathVariable String token, @RequestBody Prescription prescription) {
+        try {
+            boolean isValid = service.validateToken(token, "doctor");
+            if (!isValid) {
+                return new ResponseEntity<>("Invalid token", HttpStatus.UNAUTHORIZED);
+            }
+            prescriptionService.savePrescription(prescription);
+            return new ResponseEntity<>("Prescription saved successfully", HttpStatus.CREATED);
+        } catch (Exception e) {
+            return new ResponseEntity<>("Error saving prescription: " + e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
         }
-
-        // Save the prescription
-        prescriptionService.savePrescription(prescription);
-        return ResponseEntity
-                .ok(Map.of("message", "Prescription saved successfully"));
     }
 
     // 2. Get Prescription by Appointment ID
     @GetMapping("/{appointmentId}/{token}")
     public ResponseEntity<?> getPrescription(@PathVariable Long appointmentId, @PathVariable String token) {
-        // Validate the token
-        if (!service.validateToken(token)) {
-            return ResponseEntity
-                    .status(HttpStatus.UNAUTHORIZED)
-                    .body(Map.of("message", "Invalid token"));
+        try {
+            boolean isValid = service.validateToken(token, "doctor");
+            if (!isValid) {
+                return new ResponseEntity<>("Invalid token", HttpStatus.UNAUTHORIZED);
+            }
+            Prescription prescription = prescriptionService.getPrescription(appointmentId);
+            if (prescription == null) {
+                return new ResponseEntity<>("No prescription found for the given appointment ID", HttpStatus.NOT_FOUND);
+            }
+            return new ResponseEntity<>(prescription, HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>("Error retrieving prescription: " + e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
         }
-
-        // Get prescriptions
-        List<Prescription> prescriptions = prescriptionService.getPrescription(appointmentId);
-
-        if (prescriptions.isEmpty()) {
-            return ResponseEntity
-                    .status(HttpStatus.NOT_FOUND)
-                    .body(Map.of("message", "No prescription found for this appointment"));
-        }
-
-        return ResponseEntity.ok(prescriptions);
     }
 }
